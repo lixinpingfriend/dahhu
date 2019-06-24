@@ -660,7 +660,9 @@ function GameManager.get_app_upgrade_info(sucessCallback, errorCallback, showNet
 
     local sucessHttpGet = function(wwwBytes)
         local retData  = ModuleCache.SecurityUtil.DESDecode(wwwBytes, AppData.DESKey)
+        print(retData)
         retData = ModuleCache.Json.decode(retData)
+        print("get_app_upgrade_info")
         print_table(retData)
         if retData.success then
             if not ModuleCache.GameManager.lockAssetUpdate and retData.map and retData.map.assetVersion and retData.map.assetVersion.updateContent then

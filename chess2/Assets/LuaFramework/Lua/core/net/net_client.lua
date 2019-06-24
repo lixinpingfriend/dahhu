@@ -136,13 +136,7 @@ end
 -- 给服务器发送数据，data为pbc数据
 function NetClient:send_msg(proData, messageID, useData)
     local buffer = Buffer.Create(self.msgProtocolType)  --会在C#层自动回收
-    if self.msgProtocolType == 1 then
-        buffer:WriteBufferMsgProtolType1(proData, messageID, useData or 0)
-    elseif self.msgProtocolType == 2 then
-        buffer:WriteBufferMsgProtolType2(proData, messageID, useData or 0)
-    else
-        buffer:WriteBufferMsgProtolType3(proData, messageID)
-    end
+    buffer:WriteBufferMsgProtolType1(proData, messageID, useData or 0)
     self.client:SendBuffer(buffer, true)
     buffer = nil
 end

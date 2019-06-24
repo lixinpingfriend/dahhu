@@ -100,6 +100,8 @@ namespace DNet
             {
                 CloseWebSocket();
             }
+            address="ws://127.0.0.1:9815/dhahqp/hzmj/login";
+            Debug.Log("address:"+address);
             mWebSocket = new WebSocket(new Uri(address));
 #if !BESTHTTP_DISABLE_PROXY && !UNITY_WEBGL
             // if (HTTPManager.Proxy != null)
