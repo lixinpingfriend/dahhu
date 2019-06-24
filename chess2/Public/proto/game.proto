@@ -1,0 +1,25 @@
+package Game;
+
+message Poker
+{
+    required string number = 1;
+    required string colour = 2;
+}
+
+message DealPokerRsp
+{
+	required int32 type = 1;
+	repeated Poker pokers = 2;
+}
+
+
+message ComputePokerReq
+{
+	
+}
+
+message ComputePokerRsp
+{
+	required int32 cownum = 1;
+    repeated Poker pokers = 2;
+}

@@ -1,0 +1,28 @@
+"installscript"
+{
+	"Run Process"
+	{
+		"x86 Update 2"
+		{
+			"HasRunKey"		"HKEY_LOCAL_MACHINE\\Software\\Valve\\Steam\\Apps\\CommonRedist\\vcredist\\2012"
+			"process 1"		"%INSTALLDIR%\\_CommonRedist\\vcredist\\2012\\vcredist_x86.exe"
+			"command 1"		"/quiet /norestart"
+			"NoCleanUp"		"1"
+		}
+		"x64 Update 2"
+		{
+			"HasRunKey"		"HKEY_LOCAL_MACHINE\\Software\\Valve\\Steam\\Apps\\CommonRedist\\vcredist\\2012"
+			"process 1"		"%INSTALLDIR%\\_CommonRedist\\vcredist\\2012\\vcredist_x64.exe"
+			"command 1"		"/quiet /norestart"
+			"NoCleanUp"		"1"
+			"Requirement_OS"
+			{
+				"Is64BitWindows"		"1"
+			}
+		}
+	}
+}
+"kvsignatures"
+{
+	"installscript"		"129f2349e074c990e449eb30f65194fc13455a6e0c02be358ea390e703cbb0c9da76891ef3b75c028fa93e32697ae5f80b4f79cf43ffd203af3d26219eeaece84e8d3ec40fbfa94614ee6e0a694e9485b0dd6145aeeb1ca4b14a305af00c10fea44ff0248ae3dd9a9421d0a074e55d9c37427d4299a2faed031012a96d9783fe"
+}

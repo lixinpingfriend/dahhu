@@ -1,0 +1,567 @@
+syntax = "proto2";
+
+//本文件定义客户端与游戏服务器的交互命令
+
+//----------------------------------------------------------------------------------
+
+//以下为客户端发给服务器的动作
+
+//命令ID: 1001，出牌
+message ACTION_CHUPAI
+{
+	optional int32 Pai = 1;//打出的牌。如果在开局时立即听牌，则为0。
+	optional bool Ting = 2;//出牌后是否听
+	repeated int32 BuLiang = 3;//不亮的牌。如果没听，则忽略该参数。
+}
+
+//命令ID: 1002，吃
+message ACTION_CHI
+{
+	optional int32 Pai = 1;//要吃的牌
+	optional int32 ChiFa = 2;//吃后形成的顺子的第一张牌
+}
+
+//命令ID: 1003，碰
+message ACTION_PENG
+{
+	optional int32 Pai = 1;//要碰的牌
+}
+
+//命令ID: 1004，杠
+message ACTION_GANG
+{
+	optional int32 Pai = 1;		//要杠的牌
+}
+
+//命令ID: 1030，补张
+message ACTION_BUZHANG
+{
+	required int32 Pai = 1;		//要补张的牌
+}
+
+//命令ID: 1005，和
+message ACTION_HU
+{
+	optional bool jiaolongzi = 1;	//潜山玩法叫笼子（二次确认框）
+	optional int32 HuPaiLeiXing = 2;  //长沙麻将起手胡
+}
+
+//命令ID: 1017，压和(新疆杠上花)
+message ACTION_YAHU
+{
+	optional int32 Pai = 1;		//要压胡的牌
+}
+
+//命令ID: 1006，过
+message ACTION_GUO
+{
+}
+
+//命令ID: 1007，重新开始下一局
+message ACTION_RESTART
+{
+	optional int32 Piao = 1;//漂的分数
+	optional int32 Pao = 2;
+	optional bool DiTuo = 3;
+}
+
+//命令ID: 1008，买马
+message ACTION_MAIMA
+{
+	optional int32 Pai = 1;//买第几张牌
+}
+
+//命令ID: 1009，开杠
+message ACTION_KAIGANG
+{
+	optional int32 Pai = 1;//要杠的牌 （长沙麻将修改）
+}
+
+//命令ID: 1010，摸牌
+message ACTION_MOPAI
+{
+}
+
+//命令ID: 1011，漂花（安庆宿松玩法）
+message ACTION_PIAOHUA
+{
+}
+
+//命令ID: 1012，1015，叫听（六安霍邱玩法，闲家开局可听满足豹子条件时可叫听）
+message ACTION_TING
+{
+}
+
+//命令ID: 1013，报缺（阜南玩法）
+message ACTION_BAOQUE
+{
+	required int32 Que=1;	//报缺的牌色 1、条；2、万；3、筒； 4、风； 5、将
+}
+
+//命令ID: 1014，补花（青阳辣子）
+message ACTION_BUHUA
+{
+	
+}
+
+//命令ID: 1018，换三张
+message ACTION_HUANSANZHANG
+{
+	repeated int32 Pai = 1;		//对应要换的牌
+	optional int32 action = 2;  //1：换三张；2：弃三张(湖北宜昌血流成河)
+}
+
+//命令ID：1020，选漂、选尊等
+message ACTION_PIAO
+{
+	required int32 PiaoNum = 1;	//漂、尊的分数
+	optional int32 Pao = 2;		//跑分，怀宁麻将中表示下分选的胡法,0:自摸,1:单吊,2:缺门
+	optional bool DiTuo = 3;
+}
+
+//命令ID：1021，选漂、选尊等
+message ACTION_XUAN_PIAO
+{
+	optional int32 PiaoNum = 1;	//飘分
+	optional int32 type = 2;	//类型  1、飘 2、跑
+}
+
+//命令ID:1025,钓对
+message ACTION_DIAODUI
+{
+ optional int32 Pai=1;
+}
+
+//命令ID:1026,叫牌
+message ACTION_JIAOPAI
+{
+ optional int32 Pai=1;
+}
+
+//命令ID:1027,撂龙
+message ACTION_LIAOLONG
+{
+ optional int32 Pai=1;
+}
+
+// 命令ID: 1028，亮牌
+message ACTION_LIANG
+{
+	optional int32 type = 1;//1.亮中发白；2：亮东南西北
+}
+
+// 命令ID: 1100，牌局托管
+message ACTION_INTRUST
+{
+	required int32 type = 1; // 1:托管 2:取消托管 (目前比赛场房间由服务端主动托管，客户端只需在可取消时取消托管)
+}
+
+// 命令ID: 1029，刷新用户金币余额
+message ACTION_REFRESH_COINS
+{
+
+}
+
+// 命令ID: 1031，去充值
+message ACTION_RECHARGE
+{
+}
+
+// 命令ID: 1032，充值完成
+message ACTION_RECHARGE_OVER
+{
+}
+
+// 命令ID: 1033，跑圈
+message ACTION_PAO_QUAN
+{
+	optional int32 Pai=1;
+}
+
+// 命令ID: 1034，买庄
+message ACTION_MAI_ZHUANG
+{
+	optional int32 Num=1;
+}
+
+//----------------------------------------------------------------------------------
+
+//以下为服务器发给客户端的信息
+
+message SHOUZHANG//手张
+{
+	optional int32 Pai = 1;
+	optional int32 State = 2;//0:正常 1:亮倒 2:扣倒
+	optional bool Gray = 3;//该牌是否以灰色显示
+	optional bool IsFromOther = 4; //该牌是否是从其他玩家那儿换过来的
+}
+message KAN //坎
+{
+	optional bool AnGang = 1;//该坎牌是否为暗杠
+	repeated int32 Pai = 2;//坎中的每张牌。取值为（下同）：
+		//0: 牌背
+		//1~9: 一条~九条
+		//10~18: 一万~九万
+		//19~27: 一筒~九筒
+		//28: 东
+		//29: 南
+		//30: 西
+		//31: 北
+		//32: 中
+		//33: 发
+		//34: 白板
+		//35: 春
+		//36: 夏
+		//37: 秋
+		//38: 冬
+		//39: 梅
+		//40: 兰
+		//41: 竹
+		//42: 菊
+	optional int32 JinZhang = 3;	//坎中的哪一张是吃碰进来的。为-1表示没有进张，由手牌自动转化而来。
+	optional int32 Seat = 4;		//是吃碰的哪一家的牌
+	optional int32 DianGang = 5;	//如果不是暗杠，为-1表示明杠，-2表示过手杠，其他表示点杠
+	repeated int32 RealPai = 6;		//实际的牌（主要用于赖子杠统计数量）
+}
+message HUFA//和法
+{
+	optional string Name = 1;		//名称
+	optional int32 Fen = 2;			//分数。为0表示只显示名称，没有分数
+	optional bool Jia = 3;			//分数是加还是乘
+	optional bool PaiXing = 4;		//是否是牌型（普宁玩法特有）
+	optional bool showfen = 5;		//是否需要显示分数（+0 x1都由该字段控制）
+	optional string Unit = 6;		//单位
+	optional int32 SymbolType = 7;	//符号类型 ：1、没有符号  2、加法  3、乘法
+	optional int32 display_type = 8; //显示类型 0 默认值  1：牌型
+}
+
+// 分数结算数额详细数据
+message SCORE_AMOUNT_DETAIL
+{
+	optional string name = 1;		// 名字
+	optional int32 beishu = 2;		// 分数
+	optional int32 amount = 3;		// 扣费
+	optional string des = 4;		// 描述
+	optional int32 exstate =5;		//附加状态：0、正常 1、封顶 2、输光
+}
+
+// 分数结算数额
+message SCORE_AMOUNT
+{
+	required uint32 SeatID = 1;					// 座位号
+	required int32 Amount = 2;					// 应该增减的数额
+	required int32 ActualAmount = 3;			// 实际增减的数额
+	optional int32 ExtState = 4;				// 附加状态：0、正常 1、封顶 2、输光
+	repeated SCORE_AMOUNT_DETAIL DtailData = 5;	// 结算详细数据
+	optional int64 OwerBeishu = 6;				//本人的倍数
+}
+
+//分数结算记录
+message SCORE_RECORD
+{
+	required int32 sourceSeatID = 1;    //源座位号(失分)
+	required int32 targetSeatID = 2;    //目标座位号(得分)
+	required int32 beiShu = 3;           //倍数
+	required int32 amount = 4;           //得失数额
+	optional string sourceDescribe = 5;  //用于源座位玩家的描述字段(自摸等)
+	optional string targetDescribe = 6;  //用于目标座位玩家的描述字段(被自摸等)
+}
+
+// 胡牌时的类型
+message HUPAI_INFO
+{
+	required int32 pai = 1;		//胡的那张牌
+	required bool zimo = 2;		//是否是自摸
+	optional int32 pao = 3;		//不是自摸，表示放炮类型（1:上家放炮 2:下家放炮 3:对家放炮）
+}
+
+// 换张
+message HUAN_ZHANG
+{
+	required int32 pai = 1;		// 换到或换出的牌
+	required int32 type = 2;	// 换牌方式 (1:换下家 2:换上家 3:换对家)
+}
+
+message CHI
+{
+	optional int32 Pai = 1;//可吃的牌
+	repeated int32 ChiFa = 2;//吃后形成的顺子的第一张牌
+}
+
+//游戏过程中的状态
+message STATE
+{					
+	optional int32 id		= 1; //状态	 1:吃  2:碰  3:杠  4:胡 5：开杠  1000：吃三比 1001：有互包关系 10:可报听(桂林全州王钓麻将用) 11：自摸抓鱼不播放翻醒动作(桂林全州王钓麻将用) 12:此玩家已经弃三张了（宜昌血流成河） 13:明花数量(池州青阳辣子用)
+	repeated int32 ext		= 2; //附加数据 有互包关系时为和此玩家有互包关系的玩家ID,id为13时，表示明花数量
+	repeated CHI extChi		= 3;//可吃牌的方式。
+}
+
+message PLAYER_STATE
+{
+	repeated SHOUZHANG ShouZhang 	= 1;//手张。如果有摸张，则为最后一张
+	optional int32 MoZhang 			= 37;	//摸张：0、表示没有摸张，其他表示手张里面的牌值
+	repeated KAN XiaZhang			= 2;//下张
+	repeated int32 QiZhang 			= 3;//弃张
+	repeated int32 HuaPai 			= 20;//花牌
+	repeated int32 YiTing 			= 4;//已听的牌
+	repeated KAN LiaoLong 			= 29;//撂龙
+	repeated KAN JiaoPai 			= 30;//已叫牌的牌
+	optional int32 ChuPaiCnt 		= 5;//弃张的最后几张是刚出的牌
+	optional bool showArrow 		= 27;	//是否显示箭头（用于补花后不显示箭头）
+	optional bool DiTuo				= 26;	//
+	optional int32 ZongBeiShu 		= 6;//总倍数
+	optional int32 ZongGangFen 		= 7;//总杠分
+	optional int32 FanBeiShu 		= 16;//得分翻倍数
+	optional int32 BeiShu 			= 8;//小结算表示倍数 （黄石晃晃 牌局中表示当前翻数）。
+	optional int32 IntrustState		= 39; // 牌局托管状态 (0:未托管 1:正在托管但可取消 2:正在托管且不能取消)
+
+	optional uint32 HuPaiCiShu 		= 10;//和牌次数。如果不是总结算，则忽略该值。
+	optional uint32 ZiMoCiShu 		= 11;//自摸次数。如果不是总结算，则忽略该值。
+	optional uint32 ZuiDaBeiShu 	= 12;//最大倍数。如果不是总结算，则忽略该值。
+	optional uint32 GangPaiCiShu 	= 13;//杠牌次数。如果不是总结算，则忽略该值。
+	optional uint32 LiangDaoCiShu 	= 14;//亮倒次数。如果不是总结算，则忽略该值。
+	optional uint32 DiaoPaoCiShu 	= 15;//点炮次数。如果不是总结算，则忽略该值。
+	optional uint32 AnGangCiShu 	= 9;//暗杠次数。如果不是总结算，则忽略该值。
+	optional uint32 offlineTime 	= 51;//离线总时间（秒)。如果不是总结算，则忽略该值。
+	optional uint32 offlineMount 	= 52;//离线次数。如果不是总结算，则忽略该值。
+	optional uint32 offlineTimeMax 	= 54;//离线最长时间
+	optional uint32 waitTimeMax 	= 55;//等待最长时间
+
+	repeated int32 HuPai 			= 18;//和的那些牌。如果为空，则表示未胡牌
+	repeated HUFA HuFa 				= 17;//和法
+	optional uint32 MaiMa 			= 38;//买马的分数
+	optional uint32 ZhongNiao 		= 19;//中鸟的次数
+	optional uint32 lianzhuangnum 	= 21;//连庄次数
+	optional bool piaohuacfg 		= 22;//漂花标志
+	optional int32 piaohuacfgnew 	= 31;//新增漂花标志（0、无状态；1、未选择；2、漂花；3、不漂花）
+	optional bool baozicfg 			= 23;//豹子标志（六安霍邱玩法）
+	optional bool BaoPaiJingGao 	= 24;//包牌关系警告
+	optional int32 Que 				= 25;//报缺的牌色 1、条；2、万；3、筒； 4、风； 5、将
+	repeated int32 ZhongMa 			= 28;//中马（中鸟）的那张牌是哪几张。
+	repeated int32 SanZhang 		= 32;//未换的或者换到的三张牌
+	repeated HUPAI_INFO hupais 		= 33;//胡牌列表（血流成河用）
+	repeated HUAN_ZHANG SanZhangToOther = 34; // 换给其他玩家的三张牌
+	optional int32 Balance 			= 40;// 账户余额
+	optional int32 FanShu 			= 41;// 当前番数
+	repeated int32 MaPai  			= 42; //翻的马牌 
+	optional int32 Is_RoomOwner 	= 43;//是否房主 1为房主 2不是房主
+	optional int32 dis_user 		= 44;//是否申请解散，1申请者，2同意者，3拒绝者
+	repeated int32 KeJiaoPai 		= 47;//可叫牌的牌
+	optional int32 mai_zhuang 		= 48;//是否买庄 -1没买， 0 不买庄， 1买庄
+	optional uint64 UserID  		= 49;//用户ID
+	repeated STATE  state			= 50;//牌局过程中的可吃碰杠的状态
+	optional int32 huPaiSep = 53; //此局中是第几个胡牌的，血战用
+}
+
+message ACTION
+{
+	optional uint32 SeatID = 1;//做出动作的用户
+	optional int32 Action = 2;//已做出的动作
+							//1:吃 2:碰 3:明杠 4:暗杠 5:点杠 6:和 7:听 8:出 9:自动出 10:摸
+							//11:开杠 12:过牌 13：安庆宿松漂花 14：辣子先补花 15:叫牌 16:撂龙 17:天胡 18：压胡 19: 跑圈
+							//21：板板胡  22：缺一色  23：六六顺  24：大四喜 25:亮中发白 
+							//31：自摸 32：放炮 33：接炮
+							//41:查大叫 42:捉花猪 43:对对胡 44:清一色 45:清一色对对胡
+							//51：发财杠  52：红中杠  53：杠癞子 54：杠上开花  55：豪华七小对  56：将一色  57：七对自摸   58：七对接炮  59：硬胡门清自摸 
+							//61：有癞子门清自摸  62：屁胡胡牌  63：有癞子自摸   64：硬胡接炮  65：硬胡自摸  66：碰碰胡 67:赖子皮 
+							//71：报条  72：报万 73：报筒 74：报风 75：报将 76:摸赖子	77:吃三比 78：黄庄 79：抓鱼 80:混一色 81:烂牌 82:抢杠胡 83:七对
+							//84：七星归位 85:大三元 86:杠上炮 87:十老头 88:五梅花 89:地胡
+}
+message TING
+{
+	optional int32 ChuPai = 1;//可出的牌。如果为0，表示在开局时即可听，不用出牌。
+	repeated int32 TingPai = 2;//出牌后听的牌。
+	repeated int32 Fen = 3;//每个听的牌可得分
+}
+message LIANG
+{
+	repeated int32 Pai = 1;//哪些牌不亮。一个数字代表该牌的一副刻子。
+	repeated TING KeChu = 2;//当上述牌不亮时，可出的牌。
+}
+
+message KAI_GANG
+{
+	optional int32 Pai = 1;//开杠的牌
+	optional uint32 SeatID = 2;//做出动作的用户
+	repeated int32 GangPai = 3;//开杠出来的牌
+}
+
+//宝牌关系变化
+message BaoPaiChange
+{
+	required int32 act = 1;		//1、吃；2、碰；3、杠
+	required bool change = 2;	//0、取消关系；1、激活关系
+}
+
+//墩 的数据
+message DunState
+{
+	optional uint32 DunStart 	= 1;	//墩从哪里开始
+	repeated int32 DunTiChu 	= 2;	//墩剔除。
+	optional uint32 TotalCount 	= 3;	//总共多少张牌
+}
+
+//可执行的动作
+message ActionState
+{
+	optional int32 ActionID 	= 1;	//操作ID  1、可碰 2、可杠  3、可钓对  4、可补花 5、可胡  6、可压胡 7、可补张 8、可买码 9、可摸 
+										//10、可出 11、可亮中发白 12、可飘花 13、可听 14、可换三张 15、可报缺 16、可起手胡类型(1 板板胡  2 缺一色  3 六六顺  4 大四喜) 	
+										//17、可开杠 18、可报(1、条；2、万；3、筒； 4、风； 5、将)
+	repeated int32 Data 		= 2;	//操作数据
+}
+
+//金币场数据
+message GOLD_FIELD_DATA
+{
+	optional int32 FeeNum 						= 1; // 金币场台费
+	optional int32 BaseCoinScore 				= 2; // 底分（目前只有金币场房间才有该字段）
+	repeated SCORE_AMOUNT ScoreSettle  			= 3; // 分数实时结算信息 (金币场房间使用)
+	optional bool IsChangeRoomWhileRestart 		= 4; // 点继续游戏时是否触发换桌 (金币场房间小结算时使用)
+	optional bool IsAutoStartAfterChangeRoom 	= 5; // 换桌后是否需要自动准备 (金币场房间使用)
+}
+
+//随机圈数相关数据(四川仁寿血战)
+message QUAN_DATA
+{
+	optional int32 currentQuan = 1;//当前圈
+	optional int32 maxQuan = 2 ;//最大圈
+	optional int32 initQuan = 3;//开始圈数
+	optional int32 maxZhuang = 4;//最大当庄次数
+	optional int32 currentZhuang = 5;//当前当过庄的次数(庄变了+1)
+}
+
+
+//附加数据
+message ExtraData
+{
+	optional int32 ExtraID 	= 1;	//数据ID  1.营口麻将中表示东风玩家；2.可亮中发白；3.可亮东南西北
+	repeated int32 Data 	= 2;	//数据   ExtraID为1时表示东风玩家的ID
+}
+
+//命令ID：1001，游戏当前状态
+message GAME_STATE
+{
+	repeated PLAYER_STATE Player = 1;	//每个用户的状态
+	repeated int32 Dun = 2;				//墩上的牌
+	optional uint32 DunStart = 3;		//墩从哪里开始
+	optional uint32 TotalCount = 4;		//总共多少张牌
+	optional uint32 Dice1 = 5;
+	optional uint32 Dice2 = 6;			//两个骰子值。Dice1为非0表示游戏刚开始，要播骰子动画和抓牌动画。为0表示已在游戏，此时忽略Dice2。+
+	optional uint32 ZhuangJia = 7;		//庄家的座位号
+	optional uint32 CurPlayer = 8;		//当前等待出牌的座位号。为-1表示已出牌，为-2表示有人拦牌。
+	optional uint32 ArrowPlayer = 40;	//箭头指向的玩家（打完牌后永远指向下一家）
+	optional int32 LaiGen = 27;			//赖根。为0表示没有赖根。
+	optional int32 LaiZi = 28;			//赖子。为0表示没有赖子。
+	repeated int32 HuaPai = 31;			//花牌。为空表示没有花牌。
+
+	repeated CHI KeChi = 9;				//可吃牌的方式。
+	repeated int32 KePeng = 10;			//可碰的牌
+	repeated int32 KeGang = 11;			//可杠的牌
+	repeated int32 KeDiaoDui = 37;		//可钓对的牌
+	repeated int32 KeBuHua = 38;		//可补花的牌
+	
+	repeated int32 KeHu = 12;			//可和的牌
+	repeated int32 KeYaHu = 50;			//可压胡的牌
+	repeated int32 KeBuZhang = 49;		//可补张的牌
+	repeated LIANG KeLiang = 13;		//可亮牌的方式
+	repeated int32 BuLiang = 14;		//可以不亮的牌。一个数字代表该牌的一副刻子。如果不可亮牌，则忽略该参数。
+	repeated int32 MaiMa = 19;			//买马的牌。为空表示未买马。
+	repeated int32 ZhongMa = 20;		//中马的那张牌是哪几张。
+	optional bool KeMaiMa = 21;			//是否可买马
+	optional bool KeMo = 24;			//是否可摸牌
+	optional bool KeChu = 17;			//是否可出牌
+	optional bool KeLiangZFB = 42; 		//可亮中发白
+	repeated ACTION Action = 29;		//做出的动作
+	repeated int32 YiTing = 30;			//正在听的牌
+	repeated BaoPaiChange bpcs = 39;	//吃碰杠是否会触发三口关系改变
+    repeated int32 JiangPai = 48;		//将牌（南通长牌）
+	optional uint32 CurRound = 15;		//当前是第几局。如果已结算所有局，则表示实际完成的局数。
+	optional int32 DianPao = 18;		//点炮的玩家。为-1表示无人点炮
+	optional int32 Result = 16;			//0:在牌局中 1:已结算一小局 2:已结算所有局。3:局中结算 如果不是1，则忽略以下所有参数。
+	optional uint32 SeqNo = 26;			//序号
+	
+	optional bool KePiaoHua = 32;		//是否需要显示漂花（第一个action时才显示，且开关是不强漂）
+	optional int32 zunnum = 33;			//当前局的尊数（宿松玩法专用）
+	optional int32 longfen = 34;		//笼分（潜山玩法）
+	optional bool KeTingBeg = 35; 		//是否开局可听
+	optional int32 WeiZhang = 36; 		//尾张
+	optional bool HuanSanZhang = 51;	//是否有换三张
+	optional int32 SanZhangType = 52;	//随机换牌的类型：1、顺时针/2、逆时针/3、对家
+	optional bool QiSanZhang = 90;      //是否已经完成弃三张,true表示已经走完弃三张流程
+	optional bool ShiFouBaoQue = 41;	//是否报缺
+	optional int64 starttime = 45;		//每一局的发牌时间戳（从1900年1月1日00开始的秒数）
+	optional int64 endtime = 46;		//每一局的结束时间戳（从1900年1月1日00开始的秒数）
+	optional uint32 RestTime = 99;		// 下一局开始剩余秒数（如果不是小结算状态和比赛场房间，则忽略该值)
+	optional uint32 IntrustRestTime = 100;	// 托管倒计时剩余时间 (比赛场牌局指定时间内如果轮到玩家操作而没操作就将其托管，如果不在牌局中则可忽略)
+	repeated int32 KeHuLeiXing =101;		//可胡牌的类型数组（1 板板胡  2 缺一色  3 六六顺  4 大四喜 ）
+	repeated int32 KeKaiGang2 = 102;		//可开杠的牌
+	optional int32 DelayMo = 103;			//是否延迟摸牌
+	optional KAI_GANG GangPai2 = 104;		//开杠后的数据
+	optional int32 BaseCoinScore = 105;			// 底分（目前只有金币场房间才有该字段）
+	repeated SCORE_AMOUNT ScoreSettle  = 106; 	// 分数实时结算信息 (金币场房间使用)
+	repeated SCORE_RECORD ScoreRecord  = 110;   //分数结算记录(金币场使用)
+	optional int32 FeeNum = 107; // 金币场台费
+	optional bool IsChangeRoomWhileRestart = 108; // 点继续游戏时是否触发换桌 (金币场房间小结算时使用)
+	optional bool IsAutoStartAfterChangeRoom = 109; // 换桌后是否需要自动准备 (金币场房间使用)
+	optional uint32 RealyRound = 53;	//实际局号
+	repeated LIANG KePaoQuan = 54; 		//可跑圈
+	optional uint32 KaiGangDice1 = 55;	//开杠打筛
+	optional uint32 KaiGangDice2 = 56;	//开杠打筛
+	repeated int32 LaiZis = 57;			//赖子数组
+	repeated int32 LaiGens	= 58;		//赖根数组
+	repeated int32 KeBao = 59;			//1、条；2、万；3、筒； 4、风； 5、将
+	repeated int32 RecommendPai = 60;	//推荐出牌
+	repeated ActionState DoActionSet = 61;	//可操作集合
+	optional DunState DunData = 62;	//牌墩相关数据
+	optional GOLD_FIELD_DATA GoldFieldData =63;//金币场相关数据
+	optional int32 HaiDiStatus = 70;//罗田麻将的海底捞状态，1表示即将进入海底捞，2表示正在海底捞
+	optional QUAN_DATA QuanData = 80;//四川仁寿血战，圈数相关数据
+	repeated ExtraData ExtraDatas = 81;//额外数据
+}
+
+//命令ID：1002，用户准备状态
+message READY_STATE
+{
+	required bool Ready = 1;		//是否已经准备（未准备需要显示准备UI）
+	required int32 PiaoType = 2;		//漂、尊等中间流程显示类型：0、无；1、漂  2 下跑  3：买跑（飘）和下跑
+	required int32 PiaoNum = 3;		//每局开始选的尊数（宿松：类似加漂）
+	required int32 SeatID = 4;		//显示用的座位ID（选座位）
+	required uint64 UserID = 5; 		//用户ID。为0表示该座位的上的用户已离开
+	optional int32 Pao = 6;			//跑分，怀宁麻将中表示下分选的胡法,0:自摸,1:单吊,2:缺门
+	optional bool DiTuo = 7 ; 		//是否抵坨
+	optional int32 ErrCode = 8;		// 错误码（金币场房间继续游戏时若金币不够错误码为-888）
+	optional string ErrInfo = 9;	// 准备失败时的错误信息
+	optional uint32 RestTime = 10;	// 倒计时准备时间（金币场房间开局前不点准备会被踢出）
+	optional int32 Balance = 11;	// 账户余额
+	optional int32 State = 12;		// 0初始状态 1、充值中
+}
+
+//命令ID：1003,用户离线数据
+message USER_OFFLINE_STATE
+{
+	repeated int32 OfflineTime = 1; //离线时间（-1 为未离线 ，>=0 表示已离线时间）
+}
+
+message USER_STATE
+{
+	repeated READY_STATE State = 1;		//每个用户是否已准备
+	optional int32 msgtype = 2;			//0、正常；1、随机座位
+	optional int32 randomseat = 3;		//是否随机座位：0、不随机；1、随机
+	optional uint32 ZhuangJia = 4;		//庄家的座位号
+	optional bool DiceType = 5;		//骰子类型：0、不投骰；1、要投骰
+	optional int32 BaseCoinScore = 6;		// 底分（目前只有金币场房间才有该字段）
+}
+
+//---------------------------------------------------------------------------------------------------------------
+message RecordConfig
+{
+	required int32 version = 1;			//录像版本数据
+	required string gamerule = 2;		//游戏规则
+	repeated int32 seatmap = 3;			//座位映射数据
+	optional int32 roomid = 4;			//新增房间ID
+	optional int32 hallnum = 5;			//棋牌馆号
+	repeated uint32 piaonum = 6;			//漂分，同state里面的piaonum
+	repeated uint32 paonum = 7;			//漂分，同state里面的pao，怀宁麻将选胡法下分,0:自摸,1:单吊,2:缺门
+	optional int32 roundcount = 8;			//房间总局数
+	repeated bool dituo = 9;          //邓州麻将是否抵坨
+}

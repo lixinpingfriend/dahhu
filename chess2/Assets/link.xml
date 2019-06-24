@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+       <assembly fullname="mscorlib">
+            <namespace fullname="System.Collections.Generic" preserve="all"/>
+            <type fullname="System.ComponentModel.TypeConverter" preserve="all" />
+            <type fullname="System.Reflection" preserve="all"/>  
+            <type fullname="System.Security.Cryptography" preserve="all"/>  
+            <type fullname="System.Runtime.CompilerServices" preserve="all"/>  
+            <type fullname="System.Runtime.InteropServices" preserve="all"/>  
+            <type fullname="System.Diagnostics" preserve="all"/>  
+            <type fullname="System.Security" preserve="all"/>  
+            <type fullname="System.Security.Permissions" preserve="all"/>  
+       </assembly>
+       <assembly fullname="UnityEngine">
+	       	<type fullname="UnityEngine.AudioListener" preserve="all"/>
+	       	<type fullname="UnityEngine.ParticleSystemRenderer" preserve="all"/>
+	       	<type fullname="UnityEngine.SpriteRenderer" preserve="all"/>
+       </assembly>
+        <assembly fullname="UnityEngine.UI" preserve="all">
+       </assembly>
+       
+</linker>

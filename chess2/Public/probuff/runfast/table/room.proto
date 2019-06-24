@@ -1,0 +1,329 @@
+package Room;
+
+
+
+message PosInfo
+{
+	required int32 pos_index =1;	//座位号
+	required int32 player_id =2;	//座位号对应的玩家ID,没有玩家则为0
+	required int32 is_ready = 3;    //座位上入住的玩家是否准备就绪(1:准备 0:未准备),没有玩家值也为0
+}
+
+//同步到期信息(state 0:房间等待准备状态 1:定庄状态 2:下注状态 3:等待结算状态)
+message ExpiresInfo
+{
+	required int32 state = 1;
+	required int32 expire = 2;  //到期时间
+}
+
+
+message RoomInfo
+{  
+  required string roomNum = 1;      //房间号
+  required int32 ruleType = 2;      //房间类型
+  required int32 totalRoundCount = 3;    //房间总局数
+  required int32 curRoundNum = 4;      //当前第几局
+  required int32 state = 5;    //0:房间等待准备状态 1:定庄状态 2:下注状态 3:等待结算状态
+  required int32 serverNow = 6;    //服务器当前时间戳
+  
+
+  
+}
+
+//聊天消息
+message ChatMsg
+{
+	required int32 msgType = 1;		//消息类型，0:快捷短语,1:表情,2:语音
+	required string text = 2;		//消息内容，当msgType==0时，为快捷短语id，当msgType==1时，为表情id;当msgType==2时为语音id
+}
+
+
+message FreeRoomState
+{
+	required int32 player_id = 1;	
+	required int32 sponsor = 2;		//发起者player_id
+	optional bool agree = 3;			//是否是同意，当isAnswered为true是有效
+}
+
+//-----------------------------------------------------------------------------------------
+message RoomListReq
+{
+	
+}
+
+message RoomListRsp
+{
+	repeated RoomInfo list = 1;
+}
+
+message EnterReq
+{
+	required int32 room_id = 1;	
+	required int32 pos_index = 2;
+}
+
+message EnterRsp
+{
+	required string err_no = 1;
+	//repeated PosInfo pos_infos = 2;	//座位信息
+}
+
+message LeaveReq
+{
+
+}
+
+message LeaveRsp
+{
+	required string err_no = 1;
+}
+
+
+message ReadyReq
+{
+	required int32 isReady = 1;
+}
+
+
+message ReadyRsp
+{
+	required string err_no = 1;
+}
+
+message CheckReq
+{
+	required int32 player_id = 1;
+}
+
+message CheckRsp
+{
+	required int32 room_id = 1;
+}
+
+
+message StartReq
+{
+
+}
+
+message StartRsp
+{
+	required string err_no = 1;
+}
+
+
+//解散房间,只有在从未开始过一局游戏时有效
+message FreeReq
+{
+	required bool agree = 1;		//agree==true，请求解散房间或同意解散房间；false，拒绝解散
+}
+
+message FreeRsp
+{
+	required string err_no = 1;
+	optional bool agree = 2;		//我是否同意的状态
+}
+
+
+message KickPlayerExpire
+{
+   required int32 expire = 1;  
+}
+
+message KickPlayerReq
+{
+	required int32 player_id = 1;
+}
+
+message KickPlayerRsp
+{
+	required string err_no = 1;
+}
+
+message ChatMsgReq
+{
+	required ChatMsg chatMsg = 1;
+}
+
+message ChatMsgRsp
+{
+	required string err_no = 1;		//成功时 =="0"
+}
+
+message CustomInfo
+{
+  required int32 player_id = 1;
+  required string customInfo = 2;
+}
+
+//座位自定义信息变化请求
+message CustomInfoChangeReq
+{
+  required string customInfo = 1;
+}
+
+//座位自定义信息变化响应
+message CustomInfoChangeRsp
+{
+  required string err_no = 1;      
+}
+
+//座位自定义信息变化广播
+message CustomInfoChangeBroadcast
+{
+  repeated CustomInfo customInfoList = 1;
+}
+
+
+
+
+
+//---------------------------------广播消息----------------------------------------
+
+message EnterBroadcast
+{
+	required PosInfo pos_info = 1;			//新进入房间玩家广播
+}
+
+message ReadyBroadcast
+{
+	required PosInfo pos_info = 1;			//玩家准备,广播
+}
+
+
+message StartBroadcast
+{
+	required string err_no = 1;				//开始游戏,广播
+	optional int32 game_loop_cnt = 2;
+}
+
+message ResetBroadcast
+{
+	repeated PosInfo pos_infos = 1;
+}
+
+message SynchronizeBroadcast
+{
+	required RoomInfo room_info = 1;
+	//repeated SeatInfo seatInfoList = 2;    //已经在房间中玩家
+}
+
+
+
+message SynExpireBroadcast{
+	repeated ExpiresInfo expires = 1;
+}
+
+message ReconnBroadcast
+{
+	required int32 player_id = 1;
+}
+
+
+message DisconnBroadcast
+{
+	required int32 player_id = 1;
+}
+
+message CreateBroadcast
+{
+	required string err_no = 1;
+}
+
+message FreeBroadcast
+{	
+	repeated FreeRoomState freeRoomStateList = 1;	
+	required int32 expire = 2;  //到期时间
+	
+}
+
+message FreeSuccessBroadcast
+{	
+}
+
+
+
+message KickPlayerBroadcast
+{
+	required int32 player_id = 1;
+}
+
+message LeaveBroadcast
+{
+	required int32 player_id = 1;
+}
+
+//聊天广播
+message ChatMsgBroadcast
+{
+	required int32 player_id = 1;		//发消息者的id
+	required ChatMsg chatMsg = 2;
+}
+
+message UserCoinBalanceReq
+{
+}
+
+message OneShotSettleNotify
+{
+    message player 
+    {
+        optional int32 player_id = 1;
+        optional int32 coin = 2;
+        optional int32 coinBalance = 3;
+    }
+    repeated player players=1;
+	optional string reason = 2;//"bomb_settle":炸彈
+}
+
+message IntrustReq
+{
+    optional int32 action = 1;// 1 代表申请  2 代表取消托管状态
+}
+
+message IntrustRsp
+{
+    optional int32 status = 1;// 1 代表托管状态  0 代表取消托管状态
+}
+
+message IntrustNotify
+{
+    optional int32 player_id = 1;
+    optional int32 status = 2;// 1 代表托管状态  0 代表取消托管状态
+}
+
+message BankruptConfirmReq{
+	optional int32 action=1;//3 不充值，确认破产 0、已经充值重新检查破产状态
+}
+
+message BankruptNotify
+{
+    optional int32 player_id = 1;
+	optional int32 coin = 2;
+	optional int32 restCoin = 3;
+	optional int32 coinBalance = 4;
+	optional int32 state = 5; //3 已确认破产 2 正等待玩家充值 0恢复正常状态 1恢复成托管状态
+	optional int32 waitCnt = 6;//等待充值的玩家个数
+}
+
+//充值请求，点开商店页面后发送
+message RechargeReq{
+  optional bool open = 1;  //true 打开充值页面 false 关闭充值页面
+}  
+//充值通知，有玩家正在充值，用于效果显示
+message RechargeNotify {
+    required int32 player_id = 1;
+    required bool open = 2;
+}
+//定时器通知
+message TimeoutNotify{
+	optional int32 timeout=1;//还剩多久超时
+	optional int32 event=2;//0:等待玩家准备 1:等待出牌，超时托管 2：等待充值，超时  -1解散
+	optional int32 player_id=3;//如为0 或者空，则表示房间
+}
+//红包雨
+message RoomAwardMessage
+{
+    required uint64 UserID = 1; // 获得奖励的玩家的ID
+    required string Message = 2; // 奖励信息（由运营系统和客户端协商格式）
+}

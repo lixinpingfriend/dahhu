@@ -1,0 +1,92 @@
+syntax = "proto2";
+
+//本文件定义客户端与登录服务器的交互命令
+
+//以下为客户端发给服务器的命令和回应
+
+//命令ID：1，请求登录
+message CMD_Login
+{
+	optional uint64 UserID = 1; //用户ID。为0表示微信登录
+	optional string Password = 2;  //密码
+	optional string WeiXinCode = 3; //微信授权码。如果是用ID和密码登录，则忽略该参数
+	optional string Platform = 4; //系统平台
+	optional uint32 ProtoVersion = 5;//协议版本。固定为1
+	optional string ClientVersion = 6;//客户端版本
+	optional string AppName = 7;//客户端名称，每个游戏不一样
+}
+message RSP_Login
+{
+	optional uint64 UserID = 1;  //用户ID，0表示服务器拒绝。如果拒绝，则忽略以下三项参数。
+	optional string Password = 2; //密码
+	optional uint32 RoomID = 3; //如果正在游戏中，则表示房号。为0表示不在游戏中。
+	optional string GameName = 4; //如果正在游戏中，则表示游戏名。不在游戏中则忽略该值。
+	optional string ErrInfo = 5;//如果拒绝，则表示详细描述。
+}
+
+//命令ID：2，请求创建并进入房间
+message CMD_CreateRoom
+{
+	optional string GameName = 1;  //游戏名
+	optional uint32 RoundCount = 2; //局数
+	optional string Rule = 3; //游戏规则，具体格式由游戏服务器和客户端议定
+}
+message RSP_CreateRoom
+{
+	optional uint32 RoomID = 1; //房间号。为0表示创建失败。如果失败，则忽略以下除ErrorInfo之外的全部参数。
+	optional string ServerHost = 2; //游戏服域名
+	optional int32 ServerPort = 3; //游戏服端口
+	optional uint32 SeatID = 4; //座位号
+	optional string Password = 5; //临时密码
+	optional string ErrorInfo = 6; //如果创建失败，则表示失败的描述信息。
+}
+
+//命令ID：3，请求进入房间
+message CMD_EnterRoom
+{
+	optional uint32 RoomID = 1;  //房间号或麻将馆馆号
+}
+message RSP_EnterRoom
+{
+    //  0: 成功，非零值表示失败，ErrorInfo为失败描述信息
+    // -1: 表示房间不存在或已解散
+    // -2: 表示房间已满
+    // -3: 非法操作，会直接关闭连接，不会发送响应
+    // -4: 不允许直接通过房号进入麻将馆的房间，只能通过馆号进入
+    // -5: 该玩家的客户端不支持此房间的玩法规则
+    // -6: 获取麻将馆数据失败
+    // -7: 该麻将馆不存在
+    // -8: 玩家不在该麻将馆中
+	// -9: 玩家被禁止进入该麻将馆
+	// -10: 因其它原因进入麻将馆失败，具体信息在ErrInfo中
+	// -11：房卡不足
+	// -12：数据非法
+	// -13：获取房卡异常
+	optional int32 Error = 1;
+	optional string ServerHost = 2; //游戏服域名
+	optional int32 ServerPort = 3; //游戏服端口
+	optional uint32 SeatID = 4; //座位号
+	optional string Password = 5; //临时密码
+	optional uint32 RoundCount = 6;//房间的总局数
+	optional string Rule = 7; //房间的游戏规则，与CMD_CreateRoom中的Rule参数一致。
+	optional uint32 RoomID = 8; // 房间号，用于麻将馆模式
+	optional uint32 HallID = 9; // 麻将馆馆号，若进入的不是麻将馆则为0
+	optional string ErrorInfo = 10; // 如果进入失败，则表示失败的描述信息，否则为空
+}
+
+//命令ID：4，请求进入大厅房间
+message CMD_EnterHall
+{
+	optional string GameName = 1;  //游戏名
+	optional string Rule = 2; //游戏规则，与CMD_CreateRoom中的Rule参数一致。
+}
+message RSP_EnterHall
+{
+	optional uint32 RoomID = 1; //房间号。为0表示游戏名不存在或规则错误。
+	optional string ServerHost = 2; //游戏服域名
+	optional int32 ServerPort = 3; //游戏服端口
+	optional uint32 SeatID = 4; //座位号
+	optional string Password = 5; //临时密码
+	optional string ErrorInfo = 6; //如果进入失败，则表示失败的描述信息。
+}
+

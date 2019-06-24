@@ -1,0 +1,5299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d877c84d10b4ec785864e1861ee639, type: 3}
+  m_Name: PlayModeData
+  m_EditorClassIdentifier: 
+  isLocal: 0
+  localId: 13
+  configs:
+  - key: 1
+    isOpen: 1
+    isOnline: 1
+    name: "\u5B89\u5FBD\u7701"
+    shortName: "\u5B89\u5FBD"
+    gameName: AnHui
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u5B89\u5FBD.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u84DD.png"
+    popTag: 0
+    modName: 
+    appName: DHAHQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7EA2\u4E2D\u9EBB\u5C06"
+        gameName: HZMJ
+        gameId: 1
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hzmj_v2
+        goldRoomName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        createName: DHAHQP_HZMJ_HZ
+        wanfaType: hzmj_v2
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6BD4\u9E21"
+        hallName: "\u6B22\u4E50\u6BD4\u9E21"
+        bg: BackgroundHongZhong
+        btnImg: "BiJi_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u6B22\u4E50\u6BD4\u9E21"
+        gameName: BIJI
+        gameId: 2
+        isOpen: 0
+        package: biji
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_BIJI_BJ
+        wanfaType: 0|1|2
+        showIndex: 2
+        tips: "\u6B22\u4E50\u6BD4\u9E21|\u8212\u57CE\u6BD4\u9E21|\u516D\u4EBA\u6BD4\u9E21"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u6BD4\u9E21"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u6781\u901F\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6781\u901F\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 3
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHAHQP_RUNFAST_RUNFAST
+        wanfaType: 1|2
+        showIndex: 3
+        tips: "\u5B89\u5FBD\u5173\u724C|\u7ECF\u5178\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u6781\u901F\u725B\u4ED4"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u6781\u901F\u725B\u4ED4"
+        gameName: BULLFIGHT
+        gameId: 4
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHAHQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 4
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u6B22\u4E50\u63BC\u86CB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6B22\u4E50\u63BC\u86CB"
+        gameName: GUANDAN
+        gameId: 5
+        isOpen: 1
+        package: guandan
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_GUANDAN_GD
+        wanfaType: 0|1
+        showIndex: 5
+        tips: "\u56E2\u56E2\u8F6C|\u7ECF\u5178\u73A9\u6CD5"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 7
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 6
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u98D8\u4E09\u53F6"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u98D8\u4E09\u53F6"
+        gameName: ZHAJINHUA
+        gameId: 6
+        isOpen: 0
+        package: zhajinhua
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_ZHAJINHUA_ZHAJINHUA
+        wanfaType: 0
+        showIndex: 7
+        tips: "\u98D8\u4E09\u53F6"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u902E\u72D7\u817F"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u902E\u72D7\u817F"
+        gameName: DAIGOUTUI
+        gameId: 8
+        isOpen: 1
+        package: daigoutui
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_DAIGOUTUI_DAIGOUTUI
+        wanfaType: 0
+        showIndex: 8
+        tips: "\u902E\u72D7\u817F"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6251\u514B\u901A\u7528"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u6362\u6362\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6362\u6362\u9EBB\u5C06"
+        gameName: DZHH
+        gameId: 9
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_huanhuan
+        goldRoomName: "\u6362\u6362\u9EBB\u5C06"
+        createName: DHAHQP_DZHH_HH
+        wanfaType: wbmj_huanhuan
+        showIndex: 9
+        tips: "\u6362\u6362"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6362\u6362"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u5341\u4E09\u5F20"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u5341\u4E09\u5F20"
+        gameName: SHISANZHANG
+        gameId: 10
+        isOpen: 0
+        package: shisanzhang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_SHISANZHANG_SSZ
+        wanfaType: 0
+        showIndex: 10
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,\u66F4\u591A\u73A9\u6CD5
+          \u53EB\u5BB6\u5B50"
+        hallName: "\u53EB\u5BB6\u5B50"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u53EB\u5BB6\u5B50"
+        gameName: JIAOJIAZI
+        gameId: 11
+        isOpen: 0
+        package: jiaojiazi
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_JIAOJIAZI_JIAOJIAZI
+        wanfaType: 1|2
+        showIndex: 11
+        tips: "\u5B89\u5E86\u4E09\u526F|\u5B89\u5E86\u4E8C\u526F"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,\u63A8\u8350\u73A9\u6CD5-\u53EB\u5BB6\u5B50"
+    - key: 2
+      value: "\u9A6C\u978D\u5C71\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "MAS_Main_\u56FE\u6807_\u542B\u5C71\u9EBB\u5C06"
+        hallName: "\u9A6C\u978D\u5C71\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u542B\u5C71\u9EBB\u5C06"
+        gameName: MASMJ
+        gameId: 201
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: masmj_hanshan
+        goldRoomName: "\u542B\u5C71\u9EBB\u5C06"
+        createName: DHAHQP_MASMJ_HS
+        wanfaType: masmj_hanshan
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u542B\u5C71"
+    - key: 3
+      value: "\u829C\u6E56\u5E02"
+      isOpen: 1
+      showIndex: 3
+      playModeList:
+      - img: "WuHu_Main_\u56FE\u6807_\u65E0\u4E3A"
+        hallName: "\u829C\u6E56\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u65E0\u4E3A\u9EBB\u5C06"
+        gameName: WHMJ
+        gameId: 301
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: whmj_wuwei
+        goldRoomName: "\u65E0\u4E3A\u9EBB\u5C06"
+        createName: DHAHQP_WHMJ_WW
+        wanfaType: whmj_wuwei
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u829C\u6E56_\u65E0\u4E3A"
+      - img: "WuHu_Main_\u56FE\u6807_\u5357\u9675\u9EBB\u5C06"
+        hallName: "\u829C\u6E56\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5357\u9675\u9EBB\u5C06"
+        gameName: WHMJ
+        gameId: 302
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: whmj_nanling
+        goldRoomName: "\u5357\u9675\u9EBB\u5C06"
+        createName: DHAHQP_WHMJ_NL
+        wanfaType: whmj_nanling
+        showIndex: 2
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u829C\u6E56_\u5357\u9675"
+    - key: 4
+      value: "\u4EB3\u5DDE\u5E02"
+      isOpen: 1
+      showIndex: 4
+      playModeList:
+      - img: "HaoZhou_Main_\u56FE\u6807_\u5229\u8F9B\u9EBB\u5C06"
+        hallName: "\u4EB3\u5DDE\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5229\u8F9B\u9EBB\u5C06"
+        gameName: BZMJ
+        gameId: 401
+        isOpen: 1
+        package: majiang
+        location: 4
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: bzmj_lixin
+        goldRoomName: "\u5229\u8F9B\u9EBB\u5C06"
+        createName: DHAHQP_BZMJ_LX
+        wanfaType: bzmj_lixin
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u4EB3\u5DDE_\u5229\u8F9B"
+      - img: "HaoZhou_Main_\u56FE\u6807_\u6DA1\u9633\u9EBB\u5C06"
+        hallName: "\u4EB3\u5DDE\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6DA1\u9633\u9EBB\u5C06"
+        gameName: BZMJ
+        gameId: 402
+        isOpen: 1
+        package: majiang
+        location: 4
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: bzmj_guoyang
+        goldRoomName: "\u6DA1\u9633\u9EBB\u5C06"
+        createName: DHAHQP_BZMJ_GY
+        wanfaType: bzmj_guoyang
+        showIndex: 2
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u4EB3\u5DDE_\u6DA1\u9633"
+      - img: "HaoZhou_Main_\u56FE\u6807_\u8499\u57CE\u9EBB\u5C06"
+        hallName: "\u4EB3\u5DDE\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8499\u57CE\u9EBB\u5C06"
+        gameName: BZMJ
+        gameId: 403
+        isOpen: 1
+        package: majiang
+        location: 4
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bzmj_mengcheng
+        goldRoomName: "\u8499\u57CE\u9EBB\u5C06"
+        createName: DHAHQP_BZMJ_MC
+        wanfaType: bzmj_mengcheng
+        showIndex: 3
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u4EB3\u5DDE_\u8499\u57CE"
+    - key: 5
+      value: "\u6C60\u5DDE\u5E02"
+      isOpen: 1
+      showIndex: 5
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u6C60\u5DDE_\u9752\u9633\u5E73\u80E1"
+        hallName: "\u6C60\u5DDE\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u9752\u9633\u5E73\u80E1"
+        gameName: CZMJ
+        gameId: 501
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: czmj_qyph
+        goldRoomName: "\u9752\u9633\u5E73\u80E1"
+        createName: DHAHQP_CZMJ_QYPH
+        wanfaType: czmj_qyph
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u6C60\u5DDE_\u9752\u9633\u5E73\u80E1_\u5927"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u6C60\u5DDE_\u9752\u9633\u8FA3\u5B50"
+        hallName: "\u6C60\u5DDE\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u9752\u9633\u8FA3\u5B50"
+        gameName: CZMJ
+        gameId: 502
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: czmj_qylz
+        goldRoomName: "\u9752\u9633\u8FA3\u5B50"
+        createName: DHAHQP_CZMJ_QYLZ
+        wanfaType: czmj_qylz
+        showIndex: 2
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u6C60\u5DDE_\u9752\u9633\u8FA3\u5B50_\u5927"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,JiangSu_Main_\u56FE\u6807_\u4E1C\u81F3"
+        hallName: "\u4E1C\u81F3\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u4E1C\u81F3\u9EBB\u5C06"
+        gameName: CZDZ
+        gameId: 503
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: czmj_dz
+        goldRoomName: "\u4E1C\u81F3\u9EBB\u5C06"
+        createName: DHAHQP_CZDZ_DZ
+        wanfaType: czmj_dz
+        showIndex: 3
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u4E1C\u81F3\u9EBB\u5C06"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u6C60\u5DDE_\u4E1C\u81F3\u70B9\u70AE"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4E1C\u81F3\u70B9\u70AE\u80E1"
+        gameName: CZDZDPH
+        gameId: 504
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_CZDZDPH_DZ
+        wanfaType: dhahqp_czdzdph
+        showIndex: 4
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "Main_\u5165\u53E3_\u901A\u7528\u73A9\u6CD5"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,DengZhou_Main_\u56FE\u6807_\u8FA3\u5B50"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6C60\u5DDE\u8FA3\u5B50"
+        gameName: CZLZ
+        gameId: 505
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_CZLZ_LZ
+        wanfaType: czmj_czlz
+        showIndex: 5
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u8FA3\u5B50"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4E5D\u534E\u5C71\u5E73\u80E1"
+        gameName: JHSPH
+        gameId: 506
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_JHSPH_JHS
+        wanfaType: ahjhs_phmj
+        showIndex: 6
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u901A\u7528\u73A9\u6CD5"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5E99\u524D\u5E73\u80E1"
+        gameName: MQPH
+        gameId: 507
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_MQPH_MQ
+        wanfaType: ahmq_phmj
+        showIndex: 7
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u901A\u7528\u73A9\u6CD5"
+    - key: 6
+      value: "\u868C\u57E0\u5E02"
+      isOpen: 1
+      showIndex: 6
+      playModeList:
+      - img: "BengBu_Main_\u56FE\u6807_\u56FA\u9547"
+        hallName: "\u868C\u57E0\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u56FA\u9547\u63A8\u5012\u80E1"
+        gameName: BBMJ
+        gameId: 601
+        isOpen: 1
+        package: majiang
+        location: 6
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: bbmj_gztdh
+        goldRoomName: "\u56FA\u9547\u63A8\u5012\u80E1"
+        createName: DHAHQP_BBMJ_GZ
+        wanfaType: bbmj_gztdh
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u868C\u57E0_\u56FA\u9547\u63A8\u5012\u80E1"
+      - img: "BengBu_Main_\u56FE\u6807_\u4E94\u6CB3"
+        hallName: "\u868C\u57E0\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4E94\u6CB3\u63A8\u5012\u80E1"
+        gameName: BBMJ
+        gameId: 602
+        isOpen: 1
+        package: majiang
+        location: 6
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: bbmj_whtdh
+        goldRoomName: "\u4E94\u6CB3\u63A8\u5012\u80E1"
+        createName: DHAHQP_BBMJ_WH
+        wanfaType: bbmj_whtdh
+        showIndex: 2
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u868C\u57E0_\u4E94\u6CB3\u63A8\u5012\u80E1"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,BengBu_Main_\u56FE\u6807_\u868C\u57E0\u9EBB\u5C06"
+        hallName: "\u868C\u57E0\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u868C\u57E0\u9EBB\u5C06"
+        gameName: BBBB
+        gameId: 603
+        isOpen: 1
+        package: majiang
+        location: 6
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: bbmj_bbmj
+        goldRoomName: "\u868C\u57E0\u9EBB\u5C06"
+        createName: DHAHQP_BBBB_BB
+        wanfaType: bbmj_bbmj
+        showIndex: 3
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,Main_\u5165\u53E3_\u868C\u57E0"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,BengBu_Main_\u56FE\u6807_\u6000\u8FDC"
+        hallName: "\u6000\u8FDC\u63A8\u5012\u80E1"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u6000\u8FDC\u63A8\u5012\u80E1"
+        gameName: BBHY
+        gameId: 604
+        isOpen: 1
+        package: majiang
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_BBHY_HY
+        wanfaType: bbmj_gztdh
+        showIndex: 4
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,Main_\u5165\u53E3_\u6000\u8FDC"
+    - key: 7
+      value: "\u6EC1\u5DDE\u5E02"
+      isOpen: 1
+      showIndex: 7
+      playModeList:
+      - img: "ChuZhou_Main_\u56FE\u6807_\u660E\u5149"
+        hallName: "\u6EC1\u5DDE\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u660E\u5149\u9EBB\u5C06"
+        gameName: CHUZMJ
+        gameId: 701
+        isOpen: 1
+        package: majiang
+        location: 7
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: chuzmj_mgmj
+        goldRoomName: "\u660E\u5149\u9EBB\u5C06"
+        createName: DHAHQP_CHUZMJ_MG
+        wanfaType: chuzmj_mgmj
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u660E\u5149"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,ChuZhou_Main_\u56FE\u6807_\u5929\u957F"
+        hallName: "\u5929\u957F\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5929\u957F\u9EBB\u5C06"
+        gameName: CZTC
+        gameId: 702
+        isOpen: 1
+        package: majiang
+        location: 7
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: ahcz_tcmj
+        goldRoomName: "\u5929\u957F\u9EBB\u5C06"
+        createName: DHAHQP_CZTC_TC
+        wanfaType: ahcz_tcmj
+        showIndex: 2
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u5929\u957F"
+    - key: 8
+      value: "\u516D\u5B89\u5E02"
+      isOpen: 1
+      showIndex: 8
+      playModeList:
+      - img: "LuAn_Main_\u56FE\u6807_\u516D\u5B89"
+        hallName: "\u516D\u5B89\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 2
+        name: "\u516D\u5B89\u9EBB\u5C06"
+        gameName: LAMJ
+        gameId: 804
+        isOpen: 1
+        package: majiang
+        location: 8
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: lamj_liuan
+        goldRoomName: "\u516D\u5B89\u9EBB\u5C06"
+        createName: DHAHQP_LAMJ_LA
+        wanfaType: lamj_liuan
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u516D\u5B89"
+      - img: "LuAn_Main_\u56FE\u6807_\u970D\u90B1\u9EBB\u5C06"
+        hallName: "\u970D\u90B1\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u970D\u90B1\u9EBB\u5C06"
+        gameName: LAHQ
+        gameId: 801
+        isOpen: 1
+        package: majiang
+        location: 8
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: lamj_huoqiu
+        goldRoomName: "\u970D\u90B1\u9EBB\u5C06"
+        createName: DHAHQP_LAHQ_HQ
+        wanfaType: lamj_huoqiu
+        showIndex: 2
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u970D\u90B1"
+      - img: "LuAn_Main_\u56FE\u6807_\u8212\u57CE\u9EBB\u5C06"
+        hallName: "\u8212\u57CE\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8212\u57CE\u9EBB\u5C06"
+        gameName: LASC
+        gameId: 802
+        isOpen: 1
+        package: majiang
+        location: 8
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: lamj_shucheng
+        goldRoomName: "\u8212\u57CE\u9EBB\u5C06"
+        createName: DHAHQP_LASC_SC
+        wanfaType: lamj_shucheng
+        showIndex: 3
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u8212\u57CE"
+      - img: "LuAn_Main_\u56FE\u6807_\u91D1\u5BE8\u9EBB\u5C06"
+        hallName: "\u91D1\u5BE8\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u91D1\u5BE8\u9EBB\u5C06"
+        gameName: LAJZ
+        gameId: 803
+        isOpen: 1
+        package: majiang
+        location: 8
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: lamj_jinzhai
+        goldRoomName: "\u91D1\u5BE8\u9EBB\u5C06"
+        createName: DHAHQP_LAJZ_JZ
+        wanfaType: lamj_jinzhai
+        showIndex: 4
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u91D1\u5BE8"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u902E\u72D7\u817F"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u902E\u72D7\u817F"
+        gameName: DAIGOUTUI
+        gameId: 805
+        isOpen: 1
+        package: daigoutui
+        location: 8
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_DAIGOUTUI_DAIGOUTUI
+        wanfaType: 0
+        showIndex: 5
+        tips: "\u902E\u72D7\u817F"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6251\u514B\u901A\u7528"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,LuAn_Main_\u56FE\u6807_\u970D\u5C71"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u970D\u5C71\u9EBB\u5C06"
+        gameName: LAHS
+        gameId: 806
+        isOpen: 0
+        package: majiang
+        location: 8
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_LAHS_HS
+        wanfaType: lamj_huoshan
+        showIndex: 6
+        tips: 
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,Main_\u5165\u53E3_\u970D\u5C71"
+      - img: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u91D1\u5BE880\u5206"
+        gameName: JINZHAI80
+        gameId: 807
+        isOpen: 0
+        package: shengji
+        location: 8
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_JINZHAI80_JINZHAI80
+        wanfaType: 1
+        showIndex: 7
+        tips: "\u91D1\u5BE880\u5206"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,Main_\u5165\u53E3_\u6251\u514B\u901A\u7528"
+    - key: 9
+      value: "\u5B89\u5E86\u5E02"
+      isOpen: 1
+      showIndex: 9
+      playModeList:
+      - img: "AnQing_Main_\u56FE\u6807_\u592A\u6E56\u9EBB\u5C06"
+        hallName: "\u592A\u6E56\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 2
+        name: "\u592A\u6E56\u9EBB\u5C06"
+        gameName: WJMJ
+        gameId: 906
+        isOpen: 1
+        package: majiang
+        location: 9
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: aqmj_taihu
+        goldRoomName: "\u592A\u6E56\u9EBB\u5C06"
+        createName: DHAHQP_WJMJ_TH
+        wanfaType: aqmj_taihu
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u592A\u6E56"
+      - img: "AnQing_Main_\u56FE\u6807_\u671B\u6C5F\u6B63\u5B97"
+        hallName: "\u671B\u6C5F\u6B63\u5B97"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u671B\u6C5F\u6B63\u5B97"
+        gameName: AQWJ
+        gameId: 901
+        isOpen: 1
+        package: majiang
+        location: 9
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: aqmj_wangjiang
+        goldRoomName: "\u671B\u6C5F\u6B63\u5B97"
+        createName: DHAHQP_AQWJ_WJ
+        wanfaType: aqmj_wangjiang
+        showIndex: 2
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u671B\u6C5F"
+      - img: "AnQing_Main_\u56FE\u6807_\u5B89\u5E86\u6B63\u5B97"
+        hallName: "\u5B89\u5E86\u6B63\u5B97"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5B89\u5E86\u6B63\u5B97"
+        gameName: AQAQ
+        gameId: 902
+        isOpen: 1
+        package: majiang
+        location: 9
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: aqmj_anqing
+        goldRoomName: "\u5B89\u5E86\u6B63\u5B97"
+        createName: DHAHQP_AQAQ_AQ
+        wanfaType: aqmj_anqing
+        showIndex: 3
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u5B89\u5E86"
+      - img: "AnQing_Main_\u56FE\u6807_\u5BBF\u677E\u9EBB\u5C06"
+        hallName: "\u5BBF\u677E\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5BBF\u677E\u9EBB\u5C06"
+        gameName: AQSS
+        gameId: 903
+        isOpen: 1
+        package: majiang
+        location: 9
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: aqmj_susong
+        goldRoomName: "\u5BBF\u677E\u9EBB\u5C06"
+        createName: DHAHQP_AQSS_SS
+        wanfaType: aqmj_susong
+        showIndex: 4
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u5BBF\u677E"
+      - img: "AnQing_Main_\u56FE\u6807_\u5CB3\u897F\u9EBB\u5C06"
+        hallName: "\u5CB3\u897F\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5CB3\u897F\u9EBB\u5C06"
+        gameName: AQYX
+        gameId: 904
+        isOpen: 1
+        package: majiang
+        location: 9
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: aqmj_yuexi
+        goldRoomName: "\u5CB3\u897F\u9EBB\u5C06"
+        createName: DHAHQP_AQYX_YX
+        wanfaType: aqmj_yuexi
+        showIndex: 5
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u5CB3\u897F"
+      - img: "AnQing_Main_\u56FE\u6807_\u6F5C\u5C71\u9EBB\u5C06"
+        hallName: "\u6F5C\u5C71\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6F5C\u5C71\u9EBB\u5C06"
+        gameName: AQQS
+        gameId: 905
+        isOpen: 1
+        package: majiang
+        location: 9
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: aqmj_qianshan
+        goldRoomName: "\u6F5C\u5C71\u9EBB\u5C06"
+        createName: DHAHQP_AQQS_QS
+        wanfaType: aqmj_qianshan
+        showIndex: 6
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6F5C\u5C71"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,AnQing_Main_\u56FE\u6807_\u6000\u5B81"
+        hallName: "\u5B89\u5E86\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u6000\u5B81\u9EBB\u5C06"
+        gameName: AQHN
+        gameId: 907
+        isOpen: 1
+        package: majiang
+        location: 9
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_AQHN_HN
+        wanfaType: ahaq_hn
+        showIndex: 7
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,Main_\u5165\u53E3_\u6000\u5B81"
+    - key: 10
+      value: "\u961C\u9633\u5E02"
+      isOpen: 1
+      showIndex: 10
+      playModeList:
+      - img: "FuYang_Main_\u56FE\u6807_\u592A\u548C"
+        hallName: "\u592A\u548C\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 2
+        name: "\u592A\u548C\u9EBB\u5C06"
+        gameName: FYMJ
+        gameId: 1004
+        isOpen: 1
+        package: majiang
+        location: 10
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: fymj_taihe
+        goldRoomName: "\u592A\u548C\u9EBB\u5C06"
+        createName: DHAHQP_FYMJ_TH
+        wanfaType: fymj_taihe
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u592A\u548C"
+      - img: "FuYang_Main_\u56FE\u6807_\u961C\u5357"
+        hallName: "\u961C\u5357\u63B0\u5939\u5B50"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 2
+        name: "\u961C\u5357\u63B0\u5939\u5B50"
+        gameName: FNBJZ
+        gameId: 1003
+        isOpen: 1
+        package: majiang
+        location: 10
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_fnbjz
+        goldRoomName: "\u961C\u5357\u63B0\u5939\u5B50"
+        createName: DHAHQP_FNBJZ_BJZ
+        wanfaType: wbmj_fnbjz
+        showIndex: 2
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u961C\u5357"
+      - img: "FuYang_Main_\u56FE\u6807_\u961C\u5357"
+        hallName: "\u961C\u5357\u4E09\u95E8\u80E1"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 2
+        name: "\u961C\u5357\u4E09\u95E8\u80E1"
+        gameName: FNSMH
+        gameId: 1005
+        isOpen: 1
+        package: majiang
+        location: 10
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_fnsmh
+        goldRoomName: "\u961C\u5357\u4E09\u95E8\u80E1"
+        createName: DHAHQP_FNSMH_SMH
+        wanfaType: wbmj_fnsmh
+        showIndex: 3
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u961C\u5357"
+      - img: "FuYang_Main_\u56FE\u6807_\u4E34\u6CC9"
+        hallName: "\u4E34\u6CC9\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 2
+        name: "\u4E34\u6CC9\u9EBB\u5C06"
+        gameName: FYLQ
+        gameId: 1001
+        isOpen: 1
+        package: majiang
+        location: 10
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_fuyang
+        goldRoomName: "\u4E34\u6CC9\u9EBB\u5C06"
+        createName: DHAHQP_FYLQ_LQ
+        wanfaType: wbmj_fuyang
+        showIndex: 4
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u4E34\u6CC9"
+      - img: "FuYang_Main_\u56FE\u6807_\u988D\u4E0A"
+        hallName: "\u988D\u4E0A\u6760\u540E\u7FFB"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u988D\u4E0A\u6760\u540E\u7FFB"
+        gameName: WBYS
+        gameId: 1002
+        isOpen: 1
+        package: majiang
+        location: 10
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_yingshang
+        goldRoomName: "\u988D\u4E0A\u6760\u540E\u7FFB"
+        createName: DHAHQP_WBYS_YS
+        wanfaType: wbmj_yingshang
+        showIndex: 5
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u988D\u4E0A"
+    - key: 13
+      value: "\u5BBF\u5DDE\u5E02"
+      isOpen: 1
+      showIndex: 11
+      playModeList:
+      - img: "SuZhou_Main_\u56FE\u6807__\u8427\u53BF"
+        hallName: "\u8427\u53BF\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8427\u53BF\u9EBB\u5C06"
+        gameName: SZMJXX
+        gameId: 1301
+        isOpen: 1
+        package: majiang
+        location: 13
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: szmj_xiaoxian
+        goldRoomName: "\u8427\u53BF\u9EBB\u5C06"
+        createName: DHAHQP_SZMJXX_XX
+        wanfaType: szmj_xiaoxian
+        showIndex: 1
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u8427\u53BF"
+      - img: "SuZhou_Main_\u56FE\u6807_\u56FE\u6807_\u7800\u5C71"
+        hallName: "\u5BBF\u5DDE\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7800\u5C71\u9EBB\u5C06"
+        gameName: SZDS
+        gameId: 1302
+        isOpen: 1
+        package: majiang
+        location: 13
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: szds_dangshan
+        goldRoomName: "\u7800\u5C71\u9EBB\u5C06"
+        createName: DHAHQP_SZDS_DS
+        wanfaType: szds_dangshan
+        showIndex: 2
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u7800\u5C71"
+    - key: 14
+      value: "\u5408\u80A5\u5E02"
+      isOpen: 1
+      showIndex: 12
+      playModeList:
+      - img: "HeFei_Main_\u56FE\u6807_\u5E90\u6C5F"
+        hallName: "\u5408\u80A5\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5E90\u6C5F\u9EBB\u5C06"
+        gameName: HFLJ
+        gameId: 1401
+        isOpen: 1
+        package: majiang
+        location: 14
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hfmj_lujiang
+        goldRoomName: "\u5E90\u6C5F\u9EBB\u5C06"
+        createName: DHAHQP_HFLJ_LJ
+        wanfaType: hfmj_lujiang
+        showIndex: 1
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u5E90\u6C5F"
+    - key: 11
+      value: "\u6DEE\u5317\u5E02"
+      isOpen: 1
+      showIndex: 13
+      playModeList:
+      - img: "HuaiBei_Main_\u56FE\u6807_\u6DEE\u5317"
+        hallName: "\u6DEE\u5317\u63A8\u5230\u80E1"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6DEE\u5317\u63A8\u5230\u80E1"
+        gameName: WBHB
+        gameId: 1101
+        isOpen: 1
+        package: majiang
+        location: 11
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_huaibei
+        goldRoomName: "\u6DEE\u5317\u63A8\u5230\u80E1"
+        createName: DHAHQP_WBHB_HB
+        wanfaType: wbmj_huaibei
+        showIndex: 1
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6DEE\u5317"
+      - img: "HuaiBei_Main_\u56FE\u6807_\u6FC9\u6EAA"
+        hallName: "\u6FC9\u6EAA\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6FC9\u6EAA\u9EBB\u5C06"
+        gameName: WBSUIX
+        gameId: 1102
+        isOpen: 1
+        package: majiang
+        location: 11
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_suixi
+        goldRoomName: "\u6FC9\u6EAA\u9EBB\u5C06"
+        createName: DHAHQP_WBSUIX_SX
+        wanfaType: wbmj_suixi
+        showIndex: 2
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6E3A\u6EAA"
+    - key: 12
+      value: "\u6DEE\u5357\u5E02"
+      isOpen: 1
+      showIndex: 14
+      playModeList:
+      - img: "HuaiNan_Main_\u56FE\u6807_\u6DEE\u5357"
+        hallName: "\u6DEE\u5357\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6DEE\u5357\u9EBB\u5C06"
+        gameName: WBHN
+        gameId: 1201
+        isOpen: 1
+        package: majiang
+        location: 12
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_huainan
+        goldRoomName: "\u6DEE\u5357\u9EBB\u5C06"
+        createName: DHAHQP_WBHN_HN
+        wanfaType: wbmj_huainan
+        showIndex: 1
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6DEE\u5357"
+      - img: "HuaiNan_Main_\u56FE\u6807_\u5BFF\u53BF"
+        hallName: "\u5BFF\u53BF\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5BFF\u53BF\u9EBB\u5C06"
+        gameName: WBSX
+        gameId: 1202
+        isOpen: 1
+        package: majiang
+        location: 12
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_shouxian
+        goldRoomName: "\u5BFF\u53BF\u9EBB\u5C06"
+        createName: DHAHQP_WBSX_SX
+        wanfaType: wbmj_shouxian
+        showIndex: 2
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u5BFF\u53BF"
+      - img: "HuaiNan_Main_\u56FE\u6807_\u51E4\u53F0"
+        hallName: "\u51E4\u53F0\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u51E4\u53F0\u9EBB\u5C06"
+        gameName: HNFTMJ
+        gameId: 1203
+        isOpen: 1
+        package: majiang
+        location: 12
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: 'ahqp_hnft '
+        goldRoomName: "\u51E4\u53F0\u9EBB\u5C06"
+        createName: DHAHQP_HNFTMJ_FT
+        wanfaType: 'ahqp_hnft '
+        showIndex: 3
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u51E4\u53F0"
+      - img: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u5FBD_\u6DEE\u5357_\u5B89\u4E30\u9EBB\u5C06"
+        hallName: "\u6DEE\u5357\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u5B89\u4E30\u9EBB\u5C06"
+        gameName: HNAF
+        gameId: 1204
+        isOpen: 1
+        package: majiang
+        location: 12
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: ahqp_hnaf
+        goldRoomName: "\u5B89\u4E30\u9EBB\u5C06"
+        createName: DHAHQP_HNAF_AF
+        wanfaType: ahqp_hnaf
+        showIndex: 4
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataanhui.atlas,\u5B89\u4E30\u9EBB\u5C06"
+  - key: 2
+    isOpen: 1
+    isOnline: 1
+    name: "\u5E7F\u4E1C\u7701"
+    shortName: "\u5E7F\u4E1C"
+    gameName: GuangDong
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u5E7F\u4E1C.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u5170\u7EFF.png"
+    popTag: 0
+    modName: 
+    appName: DHGDQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 1
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHGDQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 1
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 2
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHGDQP_BULLFIGHT_BF
+        wanfaType: 0|1|2
+        showIndex: 2
+        tips: "\u7ECF\u5178\u62FC\u5341|\u770B\u724C\u62A2\u5E84|\u901A\u6BD4\u62FC\u5341"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 3
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGDQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 3
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+    - key: 2
+      value: "\u666E\u5B81\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "GuangDong_Main_\u56FE\u6807_\u666E\u5B81"
+        hallName: "\u666E\u5B81\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u666E\u5B81\u903C\u80E1"
+        gameName: PNMJ
+        gameId: 200
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGDQP_PNMJ_PN
+        wanfaType: pnmj_puning
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u666E\u5B81"
+      - img: "GuangDong_Main_\u56FE\u6807_\u666E\u5B81"
+        hallName: "\u666E\u5B81\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u666E\u5B81\u5BA2\u5BB6"
+        gameName: PNMJ
+        gameId: 202
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGDQP_PNMJ_KJ
+        wanfaType: pnmj_kejia
+        showIndex: 2
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u5BA2\u5BB6"
+    - key: 3
+      value: "\u6F6E\u6C55\u5730\u533A"
+      isOpen: 1
+      showIndex: 3
+      playModeList:
+      - img: "GuangDong_Main_\u56FE\u6807_\u6F6E\u6C55\u9EBB\u5C06"
+        hallName: "\u6F6E\u6C55\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6F6E\u6C55\u9EBB\u5C06"
+        gameName: CSMJCS
+        gameId: 301
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGDQP_CSMJCS_CS
+        wanfaType: gdmj_chaoshan
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataguangdong.atlas,\u6F6E\u6C55\u9EBB\u5C06"
+  - key: 3
+    isOpen: 1
+    isOnline: 1
+    name: "\u6CB3\u5357\u7701"
+    shortName: "\u6CB3\u5357"
+    gameName: HeNan
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u6CB3\u5357.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u6A58.png"
+    popTag: 0
+    modName: 
+    appName: DHZYQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 1
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHZYQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 1
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 2
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHZYQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 2
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 3
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHZYQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 3
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+    - key: 2
+      value: "\u9093\u5DDE\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "DengZhou_Main_\u56FE\u6807_\u9093\u5DDE\u9EBB\u5C06"
+        hallName: "\u9093\u5DDE\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u9093\u5DDE\u9EBB\u5C06"
+        gameName: DZMJ
+        gameId: 200
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hnmj_dengzhou
+        goldRoomName: "\u9093\u5DDE\u9EBB\u5C06"
+        createName: DHZYQP_DZMJ_DZ
+        wanfaType: hnmj_dengzhou
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u9093\u5DDE"
+  - key: 4
+    isOpen: 1
+    isOnline: 1
+    name: "\u6C5F\u82CF\u7701"
+    shortName: "\u6C5F\u82CF"
+    gameName: JiangSu
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u6C5F\u82CF.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u7EFF.png"
+    popTag: 0
+    modName: 
+    appName: DHJSQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7EA2\u4E2D\u9EBB\u5C06"
+        gameName: HZMJ
+        gameId: 5
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_HZMJ_HZ
+        wanfaType: hzmj_v2
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 1
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHJSQP_RUNFAST_RUNFAST
+        wanfaType: 1|2
+        showIndex: 2
+        tips: "\u6C5F\u82CF\u5173\u724C|\u6C5F\u82CF\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 2
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHJSQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 3
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6BD4\u9E21"
+        hallName: "\u6C5F\u82CF\u6BD4\u9E21"
+        bg: BackgroundBiJi
+        btnImg: "BiJi_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u6C5F\u82CF\u6BD4\u9E21"
+        gameName: BIJI
+        gameId: 3
+        isOpen: 0
+        package: biji
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: 'DHJSQP_BIJI_BJ '
+        wanfaType: 0|1
+        showIndex: 4
+        tips: "\u6C5F\u82CF\u6BD4\u9E21"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,Main_\u5165\u53E3_\u6781\u901F\u6BD4\u9E21"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u6B22\u4E50\u63BC\u86CB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6B22\u4E50\u63BC\u86CB"
+        gameName: GUANDAN
+        gameId: 4
+        isOpen: 1
+        package: guandan
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_GUANDAN_GD
+        wanfaType: 0|1
+        showIndex: 5
+        tips: "\u56E2\u56E2\u8F6C|\u7ECF\u5178\u73A9\u6CD5"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u98D8\u4E09\u53F6"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u98D8\u4E09\u53F6"
+        gameName: ZHAJINHUA
+        gameId: 6
+        isOpen: 0
+        package: zhajinhua
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_ZHAJINHUA_ZHAJINHUA
+        wanfaType: 0
+        showIndex: 6
+        tips: "\u98D8\u4E09\u53F6"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u4E94\u4EBA\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u4E94\u4EBA\u6597\u5730\u4E3B"
+        gameName: DAIGOUTUI
+        gameId: 7
+        isOpen: 1
+        package: daigoutui
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_DAIGOUTUI_DAIGOUTUI
+        wanfaType: 0
+        showIndex: 7
+        tips: "\u4E94\u4EBA\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u4E09\u4EBA\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u4E09\u4EBA\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 8
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 8
+        tips: "\u4E09\u4EBA\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+    - key: 2
+      value: "\u8FDE\u4E91\u6E2F\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "JiangSu_Main_\u56FE\u6807_\u4E1C\u6D77"
+        hallName: "\u4E1C\u6D77\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4E1C\u6D77\u9EBB\u5C06"
+        gameName: LYGMJ
+        gameId: 201
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_LYGMJ_DH
+        wanfaType: jslyg_donghai
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u4E1C\u6D77"
+      - img: "JiangSu_Main_\u56FE\u6807_\u65B0\u6D66"
+        hallName: "\u65B0\u6D66\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u65B0\u6D66\u9EBB\u5C06"
+        gameName: LYGMJXP
+        gameId: 202
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_LYGMJXP_XP
+        wanfaType: jslyg_xinpu
+        showIndex: 2
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u65B0\u6D66"
+    - key: 3
+      value: "\u5BBF\u8FC1\u5E02"
+      isOpen: 1
+      showIndex: 3
+      playModeList:
+      - img: "JiangSu_Main_\u56FE\u6807_\u6CD7\u6D2A\u9EBB\u5C06"
+        hallName: "\u5BBF\u8FC1\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6CD7\u6D2A\u9EBB\u5C06"
+        gameName: SQMJ
+        gameId: 301
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_SQMJ_SH
+        wanfaType: jssq_sihong
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u6CD7\u6D2A"
+    - key: 4
+      value: "\u5357\u901A\u5E02"
+      isOpen: 1
+      showIndex: 4
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_-\u957F\u724C\u901A\u7528"
+        hallName: "\u5357\u901A\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u5357\u901A\u957F\u724C"
+        gameName: NTCP
+        gameId: 401
+        isOpen: 1
+        package: changpai
+        location: 4
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_NTCP_NT
+        wanfaType: jsqp_nantong|jsqp_nantongdj
+        showIndex: 1
+        tips: "\u5357\u901A\u957F\u724C|\u5355\u5C06\u957F\u724C"
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatajiangsu.atlas,\u5357\u901A\u957F\u724C"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_-\u957F\u724C\u901A\u7528"
+        hallName: "\u5357\u901A\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u6D77\u95E8\u957F\u724C"
+        gameName: HMCP
+        gameId: 402
+        isOpen: 1
+        package: changpai
+        location: 4
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_HMCP_HM
+        wanfaType: jsqp_haimen
+        showIndex: 2
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatajiangsu.atlas,\u6D77\u95E8\u957F\u724C"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_-\u957F\u724C\u901A\u7528"
+        hallName: "\u5357\u901A\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u5982\u4E1C\u957F\u724C"
+        gameName: RDCP
+        gameId: 403
+        isOpen: 1
+        package: changpai
+        location: 4
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_RDCP_RD
+        wanfaType: jsqp_rudong
+        showIndex: 3
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatajiangsu.atlas,\u5982\u4E1C\u957F\u724C"
+      - img: "public/module/setplaymodedata/public_setplaymodedatajiangsu.atlas,JiangSu_Main_\u56FE\u6807_\u6D77\u5B89"
+        hallName: "\u5357\u901A\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6D77\u5B89\u9EBB\u5C06"
+        gameName: NTHA
+        gameId: 404
+        isOpen: 1
+        package: majiang
+        location: 4
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_NTHA_HA
+        wanfaType: jsnthamj_nantong
+        showIndex: 4
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatajiangsu.atlas,\u6D77\u5B89"
+    - key: 5
+      value: "\u626C\u5DDE\u5E02"
+      isOpen: 1
+      showIndex: 5
+      playModeList:
+      - img: "JiangSu_Main_\u56FE\u6807_\u8DCC\u5230\u80E1"
+        hallName: "\u626C\u5DDE\u8DCC\u5012\u80E1"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u626C\u5DDE\u8DCC\u5012\u80E1"
+        gameName: YZDDH
+        gameId: 501
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJSQP_YZDDH_DDH
+        wanfaType: yzmj_diedaohu
+        showIndex: 1
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u8DCC\u5012\u80E1"
+  - key: 5
+    isOpen: 0
+    isOnline: 0
+    name: "\u9655\u897F\u7701"
+    shortName: "\u9655\u897F"
+    gameName: ShanXi1
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u9655\u897F.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u84DD.png"
+    popTag: 0
+    modName: 
+    appName: DHSXQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7EA2\u4E2D\u9EBB\u5C06"
+        gameName: ZYHZ
+        gameId: 1
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSXQP_ZYHZ_HZ
+        wanfaType: sxmj_zyhz
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+    - key: 2
+      value: "\u897F\u5B89\u5E02"
+      isOpen: 0
+      showIndex: 2
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u9655\u897F\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u9655\u897F\u9EBB\u5C06"
+        gameName: SXSX
+        gameId: 203
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 0
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSXQP_SXSX_SX
+        wanfaType: sxmj_shanxi
+        showIndex: 1
+        tips: 
+        cardTheame: 
+        headIcon: 
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u897F\u5B89\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u897F\u5B89\u9EBB\u5C06"
+        gameName: SXXA
+        gameId: 201
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 0
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSXQP_SXXA_XA
+        wanfaType: sxmj_xian
+        showIndex: 2
+        tips: 
+        cardTheame: 
+        headIcon: 
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u897F\u5B89\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6E2D\u5357\u9EBB\u5C06"
+        gameName: SXWN
+        gameId: 202
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 0
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSXQP_SXWN_WN
+        wanfaType: sxmj_weinan
+        showIndex: 3
+        tips: 
+        cardTheame: 
+        headIcon: 
+  - key: 6
+    isOpen: 1
+    isOnline: 1
+    name: "\u4E91\u5357\u7701"
+    shortName: "\u4E91\u5357"
+    gameName: YunNan
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u4E91\u5357.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u7EFF.png"
+    popTag: 0
+    modName: 
+    appName: DHYNQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 1
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHYNQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 1
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 2
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHYNQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 2
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u53FC\u4E09\u6279"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u53FC\u4E09\u6279"
+        gameName: ZHAJINHUA
+        gameId: 4
+        isOpen: 0
+        package: zhajinhua
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_ZHAJINHUA_ZHAJINHUA
+        wanfaType: 0
+        showIndex: 3
+        tips: "\u53FC\u4E09\u6279"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u635E\u814C\u83DC"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u635E\u814C\u83DC"
+        gameName: LAOYANCAI
+        gameId: 3
+        isOpen: 0
+        package: laoyancai
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_LAOYANCAI_LAOYANCAI
+        wanfaType: 0|1
+        showIndex: 4
+        tips: "\u7ECF\u5178\u73A9\u6CD5|\u7801\u5B9D\u8F6E\u5E84"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 5
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 5
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+    - key: 2
+      value: "\u6587\u5C71\u5DDE"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "YunNan_Main_\u56FE\u6807_\u5C71"
+        hallName: "\u6587\u5C71\u5DDE"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u781A\u5C71\u9EBB\u5C06"
+        gameName: WSZMJ
+        gameId: 201
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_WSZMJ_YS
+        wanfaType: ynwsz_yanshan
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u781A\u5C71\u9EBB\u5C06"
+    - key: 3
+      value: "\u66F2\u9756\u5E02"
+      isOpen: 1
+      showIndex: 3
+      playModeList:
+      - img: "YunNan_Main_\u56FE\u6807_\u66F2\u9756\u98DE\u5C0F\u9E21"
+        hallName: "\u98DE\u5C0F\u9E21"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u98DE\u5C0F\u9E21"
+        gameName: QJMJFXJ
+        gameId: 301
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: ynqj_feixiaoji
+        goldRoomName: "\u98DE\u5C0F\u9E21"
+        createName: DHYNQP_QJMJFXJ_FXJ
+        wanfaType: ynqj_feixiaoji
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u98DE\u5C0F\u9E21"
+    - key: 4
+      value: "\u695A\u96C4\u5DDE"
+      isOpen: 1
+      showIndex: 4
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u695A\u96C4"
+        hallName: "\u695A\u96C4\u56DB\u4E94\u7B52"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u695A\u96C4\u56DB\u4E94\u7B52"
+        gameName: CXSWT
+        gameId: 401
+        isOpen: 1
+        package: majiang
+        location: 4
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: dhynqp_cxswt
+        goldRoomName: "\u695A\u96C4\u56DB\u4E94\u7B52"
+        createName: 'DHYNQP_CXSWT_SWT '
+        wanfaType: dhynqp_cxswt
+        showIndex: 1
+        tips: 
+        cardTheame: 1|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u695A\u96C4"
+    - key: 5
+      value: "\u7389\u6EAA\u5E02"
+      isOpen: 1
+      showIndex: 5
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u7389\u6EAA"
+        hallName: "\u7389\u6EAA\u4E94\u516D\u7B52"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7389\u6EAA\u4E94\u516D\u7B52"
+        gameName: YXWLT
+        gameId: 501
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: dhynqp_yxwlt
+        goldRoomName: "\u7389\u6EAA\u4E94\u516D\u7B52"
+        createName: DHYNQP_YXWLT_WLT
+        wanfaType: dhynqp_yxwlt
+        showIndex: 1
+        tips: 
+        cardTheame: 1|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u7389\u6EAA"
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u7389\u6EAA"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7389\u6EAA\u5C0F\u9E21\u98DE"
+        gameName: YXXJF
+        gameId: 502
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: dhynqp_yxxjf
+        goldRoomName: "\u7389\u6EAA\u5C0F\u9E21\u98DE"
+        createName: DHYNQP_YXXJF_YJX
+        wanfaType: dhynqp_yxxjf
+        showIndex: 2
+        tips: 
+        cardTheame: 1|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u7389\u6EAA"
+    - key: 6
+      value: "\u5FB7\u5B8F\u5DDE"
+      isOpen: 1
+      showIndex: 6
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u5FB7\u5B8F"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5FB7\u5B8F\u9EBB\u5C06"
+        gameName: DHMJ
+        gameId: 601
+        isOpen: 1
+        package: majiang
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_DHMJ_DH
+        wanfaType: ynmj_dehong
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,Main_\u5165\u53E3_\u5FB7\u5B8F"
+    - key: 7
+      value: "\u4FDD\u5C71\u5E02"
+      isOpen: 1
+      showIndex: 7
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u4FDD\u5C71"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4FDD\u5C71\u9EBB\u5C06"
+        gameName: BSMJ
+        gameId: 701
+        isOpen: 1
+        package: majiang
+        location: 7
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_BSMJ_BS
+        wanfaType: ynmj_baoshan
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,Main_\u5165\u53E3_\u4FDD\u5C71"
+    - key: 8
+      value: "\u6606\u660E\u5E02"
+      isOpen: 1
+      showIndex: 8
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u6606\u660E"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6606\u660E\u9EBB\u5C06"
+        gameName: KMMJ
+        gameId: 801
+        isOpen: 1
+        package: majiang
+        location: 8
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_KMMJ_KM
+        wanfaType: dhynqp_kmmj
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u4E91\u5357_\u6606\u660E"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6606\u660E\u8840\u6218"
+        gameName: KMXZDD
+        gameId: 802
+        isOpen: 1
+        package: majiang
+        location: 8
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_KMXZDD_XZ
+        wanfaType: dhynqp_kmxzdd
+        showIndex: 2
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataxinjiang.atlas,\u65B0\u7586\u8840\u6218\u5230\u5E95"
+    - key: 9
+      value: "\u4E34\u6CA7\u5E02"
+      isOpen: 1
+      showIndex: 9
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4E34\u6CA7\u9EBB\u5C06"
+        gameName: LCMJ
+        gameId: 901
+        isOpen: 1
+        package: majiang
+        location: 9
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_LCMJ_LC
+        wanfaType: dhynqp_lcmj
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u4E91\u5357_\u4E34\u6CA7"
+    - key: 10
+      value: "\u666E\u6D31\u5E02"
+      isOpen: 1
+      showIndex: 10
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u666E\u6D31"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u666E\u6D31\u9EBB\u5C06"
+        gameName: PEMJ
+        gameId: 1001
+        isOpen: 1
+        package: majiang
+        location: 10
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_PEMJ_PE
+        wanfaType: dhynqp_pemj
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u4E91\u5357_\u666E\u6D31"
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u5361\u4E8C\u6761"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u666E\u6D31\u5361\u4E8C\u6761"
+        gameName: PEKET
+        gameId: 1002
+        isOpen: 1
+        package: majiang
+        location: 10
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_PEKET_KET
+        wanfaType: dhynqp_peket
+        showIndex: 2
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u4E91\u5357_\u5361\u4E8C\u6761"
+    - key: 11
+      value: "\u4E3D\u6C5F\u5E02"
+      isOpen: 1
+      showIndex: 11
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u5361\u5FC3\u4E94"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4E3D\u6C5F\u5361\u5FC3\u4E94"
+        gameName: HZMJ
+        gameId: 1101
+        isOpen: 1
+        package: majiang
+        location: 11
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_LJKXW_KXW
+        wanfaType: LJKXW
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u4E91\u5357_\u5361\u5FC3\u4E94"
+    - key: 12
+      value: "\u662D\u901A\u5E02"
+      isOpen: 1
+      showIndex: 12
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u662D\u901A\u9EBB\u5C06"
+        gameName: ZTMJ
+        gameId: 1201
+        isOpen: 1
+        package: majiang
+        location: 12
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_ZTMJ_ZT
+        wanfaType: dhynqp_ztmj
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u4E91\u5357_\u662D\u901A"
+    - key: 13
+      value: "\u5927\u7406\u5E02"
+      isOpen: 1
+      showIndex: 13
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5927\u7406\u9EBB\u5C06"
+        gameName: DLMJ
+        gameId: 1301
+        isOpen: 1
+        package: majiang
+        location: 13
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_DLMJ_DL
+        wanfaType: dhynqp_dlmj
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u4E91\u5357_\u5927\u7406"
+    - key: 14
+      value: "\u7EA2\u6CB3\u5DDE"
+      isOpen: 1
+      showIndex: 14
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,YunNan_Main_\u56FE\u6807_\u4E2A\u65E7"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4E2A\u65E7\u9EBB\u5C06"
+        gameName: HHGJ
+        gameId: 1401
+        isOpen: 0
+        package: majiang
+        location: 14
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHYNQP_HHGJ_GJ
+        wanfaType: dhynqp_hhgj
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,\u4E91\u5357_\u4E2A\u65E7"
+  - key: 7
+    isOpen: 1
+    isOnline: 1
+    name: "\u6E56\u5357\u7701"
+    shortName: "\u6E56\u5357"
+    gameName: HuNan
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u6E56\u5357.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u84DD.png"
+    popTag: 0
+    modName: 
+    appName: DHHNQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7EA2\u4E2D\u9EBB\u5C06"
+        gameName: HZMJ
+        gameId: 1
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hzmj
+        goldRoomName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        createName: DHHNQP_HZMJ_HZ
+        wanfaType: hzmj_v2
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 2
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHHNQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 2
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 3
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHHNQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 3
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 4
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHNQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 4
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,HuNan_Main_\u56FE\u6807_\u8F6C\u8F6C"
+        hallName: "\u8F6C\u8F6C\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8F6C\u8F6C\u9EBB\u5C06"
+        gameName: CSMJZZ
+        gameId: 5
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: csmj_zhuanzhuan
+        goldRoomName: "\u8F6C\u8F6C\u9EBB\u5C06"
+        createName: DHHNQP_CSMJZZ_ZZ
+        wanfaType: csmj_zhuanzhuan
+        showIndex: 5
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u8F6C\u8F6C"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u4E09\u516C"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u4E09\u516C"
+        gameName: SANGONG
+        gameId: 6
+        isOpen: 0
+        package: sangong
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHNQP_SANGONG_SANGONG
+        wanfaType: 1|2
+        showIndex: 6
+        tips: "\u81EA\u7531\u4E0B\u6CE8|\u81EA\u7531\u62A2\u5E84"
+        cardTheame: 
+        headIcon: 
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u98D8\u4E09\u53F6"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u98D8\u4E09\u53F6"
+        gameName: ZHAJINHUA
+        gameId: 7
+        isOpen: 0
+        package: zhajinhua
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHNQP_ZHAJINHUA_ZHAJINHUA
+        wanfaType: 0
+        showIndex: 7
+        tips: "\u98D8\u4E09\u53F6"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+    - key: 2
+      value: "\u957F\u6C99\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "HuNan_Main_\u56FE\u6807_\u957F\u6C99"
+        hallName: "\u957F\u6C99\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u957F\u6C99\u9EBB\u5C06"
+        gameName: CSMJCS
+        gameId: 201
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: csmj_changsha
+        goldRoomName: "\u957F\u6C99\u9EBB\u5C06"
+        createName: DHHNQP_CSMJCS_CS
+        wanfaType: csmj_changsha
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,\u957F\u6C99\u9EBB\u5C06"
+    - key: 3
+      value: "\u5E38\u5FB7\u5E02"
+      isOpen: 1
+      showIndex: 3
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,\u738B\u9EBB\u5C06"
+        hallName: "\u738B\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 2
+        name: "\u738B\u9EBB\u5C06"
+        gameName: CDHZ
+        gameId: 301
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHNQP_CDHZ_HZ
+        wanfaType: hnhz_cdhz
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,\u738B\u9EBB\u5C06"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,\u6E58\u4E61\u544A\u80E1\u5B50"
+        hallName: "\u5E38\u5FB7\u8DD1\u80E1\u5B50"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 2
+        name: "\u5E38\u5FB7\u8DD1\u80E1\u5B50"
+        gameName: CDZP
+        gameId: 302
+        isOpen: 1
+        package: huzi
+        location: 3
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHNQP_CDZP_CD
+        wanfaType: phz_hunan_cdqmt|phz_hunan_cdhhd|phz_hunan_cddhd
+        showIndex: 2
+        tips: "\u5168\u540D\u5802|\u7EA2\u9ED1\u70B9|\u591A\u7EA2\u5BF9"
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,\u6E58\u4E61\u544A\u80E1\u5B50"
+    - key: 4
+      value: "\u5CB3\u9633\u5E02"
+      isOpen: 1
+      showIndex: 4
+      playModeList:
+      - img: "HuNan_Main_\u56FE\u6807_\u5CB3\u9633"
+        hallName: "\u5CB3\u9633\u7092\u80A1"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5CB3\u9633\u7092\u80A1"
+        gameName: YYCG
+        gameId: 401
+        isOpen: 1
+        package: majiang
+        location: 4
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHNQP_YYCG_CG
+        wanfaType: yymj_yycg
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,\u5CB3\u9633\u7092\u80A1"
+    - key: 5
+      value: "\u6E58\u4E61\u5E02"
+      isOpen: 1
+      showIndex: 5
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u5B57\u724C\u901A\u7528"
+        hallName: "\u6E58\u4E61\u544A\u80E1\u5B50"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6E58\u4E61\u544A\u80E1\u5B50"
+        gameName: XXZP
+        gameId: 501
+        isOpen: 1
+        package: huzi
+        location: 5
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: "\u6E58\u4E61\u544A\u80E1\u5B50"
+        createName: DHHNQP_XXZP_XX
+        wanfaType: phz_hunan_xxghz
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,\u6E58\u4E61\u544A\u80E1\u5B50"
+    - key: 6
+      value: "\u5A04\u5E95\u5E02"
+      isOpen: 1
+      showIndex: 6
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u5B57\u724C\u901A\u7528"
+        hallName: "\u5A04\u5E95\u653E\u70AE\u7F5A "
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5A04\u5E95\u653E\u70AE\u7F5A"
+        gameName: LDZP
+        gameId: 601
+        isOpen: 1
+        package: huzi
+        location: 6
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: "\u5A04\u5E95\u653E\u70AE\u7F5A"
+        createName: DHHNQP_LDZP_FPF
+        wanfaType: phz_hunan_ldfpf|phz_hunan_ldfpfer
+        showIndex: 1
+        tips: "\u5A04\u5E95\u653E\u70AE\u7F5A|\u653E\u70AE\u7F5A"
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,\u5A04\u5E95\u653E\u70AE\u7F5A"
+  - key: 8
+    isOpen: 0
+    isOnline: 0
+    name: "\u8D35\u5DDE\u7701"
+    shortName: "\u8D35\u5DDE"
+    gameName: GuiZhou
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u8D35\u5DDE.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u6A58.png"
+    popTag: 0
+    modName: 
+    appName: DHGZQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 1
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHGZQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 1
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 2
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHGZQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 2
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7EA2\u4E2D\u9EBB\u5C06"
+        gameName: HZMJ
+        gameId: 3
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGZQP_HZMJ_HZ
+        wanfaType: hzmj_v2
+        showIndex: 3
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+  - key: 9
+    isOpen: 1
+    isOnline: 1
+    name: "\u5E7F\u897F\u7701"
+    shortName: "\u5E7F\u897F"
+    gameName: GuangXi
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u5E7F\u897F.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u7EFF.png"
+    popTag: 0
+    modName: 
+    appName: DHGXQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u5341\u4E09\u5F20"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u5341\u4E09\u5F20"
+        gameName: SHISANZHANG
+        gameId: 12
+        isOpen: 0
+        package: shisanzhang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_SHISANZHANG_SSZ
+        wanfaType: 0
+        showIndex: 1
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 1
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHGXQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 2
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 4
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHGXQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 3
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "HuNan_Main_\u56FE\u6807_\u8F6C\u8F6C"
+        hallName: "\u8F6C\u8F6C\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8F6C\u8F6C\u9EBB\u5C06"
+        gameName: GXMJZZ
+        gameId: 6
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_GXMJZZ_ZZ
+        wanfaType: csmj_zhuanzhuan
+        showIndex: 4
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u8F6C\u8F6C"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7EA2\u4E2D\u9EBB\u5C06"
+        gameName: HZHZ
+        gameId: 7
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_HZHZ_HZ
+        wanfaType: dhqp_hongzhong
+        showIndex: 5
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 8
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 6
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u98D8\u4E09\u53F6"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u98D8\u4E09\u53F6"
+        gameName: ZHAJINHUA
+        gameId: 9
+        isOpen: 0
+        package: zhajinhua
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_ZHAJINHUA_ZHAJINHUA
+        wanfaType: 0
+        showIndex: 7
+        tips: "\u98D8\u4E09\u53F6"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u6446\u516B\u5F20"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6446\u516B\u5F20"
+        gameName: BAIBAZHANG
+        gameId: 10
+        isOpen: 0
+        package: baibazhang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_BAIBAZHANG_BBZ
+        wanfaType: 0
+        showIndex: 8
+        tips: "\u6446\u516B\u5F20"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u4E09\u516C"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u4E09\u516C"
+        gameName: SANGONG
+        gameId: 11
+        isOpen: 0
+        package: sangong
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_SANGONG_SANGONG
+        wanfaType: 1|2
+        showIndex: 9
+        tips: "\u81EA\u7531\u4E0B\u6CE8|\u81EA\u7531\u62A2\u5E84"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+    - key: 6
+      value: "\u6842\u6797\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u5B57\u724C\u901A\u7528"
+        hallName: "\u6842\u6797\u5B57\u724C"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6842\u6797\u5B57\u724C"
+        gameName: GLZP
+        gameId: 601
+        isOpen: 1
+        package: huzi
+        location: 6
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: phz_guangxi_glzp
+        goldRoomName: "\u6842\u6797\u5B57\u724C"
+        createName: DHGXQP_GLZP_GL
+        wanfaType: phz_guangxi_glzp|phz_guangxi_glzpsr
+        showIndex: 1
+        tips: "\u4E09\u4EBA\u73A9\u6CD5|\u56DB\u4EBA\u73A9\u6CD5"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataguangxi.atlas,\u6842\u6797\u5B57\u724C"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u5B57\u724C\u901A\u7528"
+        hallName: "\u5168\u5DDE\u5B57\u724C"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5168\u5DDE\u5B57\u724C"
+        gameName: QZZP
+        gameId: 602
+        isOpen: 1
+        package: huzi
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: phz_guangxi_qzzp
+        goldRoomName: "\u5168\u5DDE\u5B57\u724C"
+        createName: DHGXQP_QZZP_QZ
+        wanfaType: phz_guangxi_qzzp
+        showIndex: 2
+        tips: "\u5168\u5DDE\u5B57\u724C"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataguangxi.atlas,\u6842\u6797\u5B57\u724C"
+      - img: "public/module/setplaymodedata/public_setplaymodedataguangxi.atlas,Quanzhou_Main_\u56FE\u6807_\u738B\u9493"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5168\u5DDE\u9EBB\u5C06"
+        gameName: GLQZ
+        gameId: 603
+        isOpen: 1
+        package: majiang
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_GLQZ_WD
+        wanfaType: gxqp_guilinqzwd
+        showIndex: 3
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataguangxi.atlas,\u738B\u9493"
+      - img: "public/module/setplaymodedata/public_setplaymodedataguangxi.atlas,main_\u6842\u67F3"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6842\u67F3\u9EBB\u5C06"
+        gameName: GLGL
+        gameId: 604
+        isOpen: 1
+        package: majiang
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_GLGL_GL
+        wanfaType: glgl_guilin
+        showIndex: 4
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataguangxi.atlas,Main_\u5165\u53E3_\u6842\u67F3"
+    - key: 2
+      value: "\u5317\u6D77\u5E02"
+      isOpen: 1
+      showIndex: 3
+      playModeList:
+      - img: "Guangxi_Main_\u56FE\u6807_\u63A8\u5012\u80E1"
+        hallName: "\u5317\u6D77\u63A8\u5012\u80E1"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5317\u6D77\u63A8\u5012\u80E1"
+        gameName: BHTDH
+        gameId: 201
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: gxbh_tuidaohu
+        goldRoomName: "\u5317\u6D77\u63A8\u5012\u80E1"
+        createName: DHGXQP_BHTDH_TDH
+        wanfaType: gxbh_tuidaohu
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataguangxi.atlas,\u5317\u6D77\u63A8\u5012\u80E1"
+    - key: 3
+      value: "\u67F3\u5DDE\u5E02"
+      isOpen: 1
+      showIndex: 4
+      playModeList:
+      - img: "Guangxi_Main_\u56FE\u6807_\u67F3\u5DDE"
+        hallName: "\u67F3\u5DDE\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u67F3\u5DDE\u9EBB\u5C06"
+        gameName: LZLZ
+        gameId: 301
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: gxqp_liuzhou
+        goldRoomName: "\u67F3\u5DDE\u9EBB\u5C06"
+        createName: DHGXQP_LZLZ_LZ
+        wanfaType: gxqp_liuzhou
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|3
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataguangxi.atlas,\u67F3\u5DDE\u9EBB\u5C06"
+    - key: 4
+      value: "\u68A7\u5DDE\u5E02"
+      isOpen: 1
+      showIndex: 5
+      playModeList:
+      - img: "Guangxi_Main_\u56FE\u6807_\u68A7\u5DDE"
+        hallName: "\u68A7\u5DDE\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u68A7\u5DDE\u9EBB\u5C06"
+        gameName: WZWZ
+        gameId: 401
+        isOpen: 1
+        package: majiang
+        location: 4
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_WZWZ_WZ
+        wanfaType: gxwz_wuzhou
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u68A7\u5DDE"
+    - key: 5
+      value: "\u5D07\u5DE6\u5E02"
+      isOpen: 1
+      showIndex: 6
+      playModeList:
+      - img: "Guangxi_Main_\u56FE\u6807_\u6276\u7EE5"
+        hallName: "\u6276\u7EE5\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6276\u7EE5\u9EBB\u5C06"
+        gameName: CZFS
+        gameId: 501
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_CZFS_FS
+        wanfaType: 'gxcz_fusui '
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u6276\u7EE5"
+    - key: 7
+      value: "\u5357\u5B81\u5E02"
+      isOpen: 1
+      showIndex: 7
+      playModeList:
+      - img: "Guangxi_Main_\u56FE\u6807_\u5357\u5B81"
+        hallName: "\u5357\u5B81\u5E02"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5357\u5B81\u9EBB\u5C06"
+        gameName: NNNN
+        gameId: 701
+        isOpen: 1
+        package: majiang
+        location: 7
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGXQP_NNNN_NN
+        wanfaType: gxqp_nanning
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u5357\u5B81"
+  - key: 10
+    isOpen: 1
+    isOnline: 1
+    name: "\u6E56\u5317\u7701"
+    shortName: "\u6E56\u5317"
+    gameName: HuBei
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u6E56\u5317.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u7EFF.png"
+    popTag: 0
+    modName: 
+    appName: DHHUBEIQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7EA2\u4E2D\u9EBB\u5C06"
+        gameName: HZMJ
+        gameId: 1
+        isOpen: 0
+        package: majiang
+        location: 1
+        isOnline: 0
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hzmj_v2
+        goldRoomName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        createName: DHHUBEIQP_HZMJ_HZ
+        wanfaType: hzmj_v2
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 3
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHHUBEIQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 2
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 4
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHHUBEIQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 3
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "HuBei_Main_\u56FE\u6807_\u8840\u6D41"
+        hallName: "\u8840\u6D41\u6210\u6CB3"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8840\u6D41\u6210\u6CB3"
+        gameName: ZYXLCH
+        gameId: 5
+        isOpen: 0
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hbzy_xueliu
+        goldRoomName: "\u8840\u6D41\u6210\u6CB3"
+        createName: DHHUBEIQP_ZYXLCH_XL
+        wanfaType: hbzy_xueliu
+        showIndex: 4
+        tips: 
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,\u8840\u6D41\u6210\u6CB3"
+      - img: "HuBei_Main_\u56FE\u6807_\u5341\u5361\u4E94\u661F"
+        hallName: "\u6781\u901F\u5361\u4E94\u661F"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6781\u901F\u5361\u4E94\u661F"
+        gameName: KWX
+        gameId: 6
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hbkwx_xiangyang|hbkwx_xiaogan|hbkwx_suizhou|hbkwx_shiyan
+        goldRoomName: "\u8944\u9633\u5361\u4E94\u661F|\u5B5D\u611F\u5361\u4E94\u661F|\u968F\u5DDE\u5361\u4E94\u661F|\u5341\u5830\u5361\u4E94\u661F"
+        createName: DHHUBEIQP_KWX_XY|DHHUBEIQP_KWX_XG|DHHUBEIQP_KWX_SZ|DHHUBEIQP_KWX_SY
+        wanfaType: hbkwx_xiangyang|hbkwx_xiaogan|hbkwx_suizhou|hbkwx_shiyan
+        showIndex: 5
+        tips: "\u8944\u9633\u5361\u4E94\u661F|\u5B5D\u611F\u5361\u4E94\u661F|\u968F\u5DDE\u5361\u4E94\u661F|\u5341\u5830\u5361\u4E94\u661F"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5361\u4E94\u661F"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 7
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 6
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u98D8\u4E09\u53F6"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u98D8\u4E09\u53F6"
+        gameName: ZHAJINHUA
+        gameId: 8
+        isOpen: 0
+        package: zhajinhua
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_ZHAJINHUA_ZHAJINHUA
+        wanfaType: 0
+        showIndex: 7
+        tips: "\u98D8\u4E09\u53F6"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,HuBei_Main_\u56FE\u6807_\u6251\u514B510k"
+        hallName: "\u4E94\u5341K"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4E94\u5341K"
+        gameName: WUSHIK
+        gameId: 9
+        isOpen: 1
+        package: wushik
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_WUSHIK_WUSHIK
+        wanfaType: 1|2|3|4
+        showIndex: 8
+        tips: "\u5927\u51B6\u73A9\u6CD5|\u9EC4\u77F3\u73A9\u6CD5|\u9EC4\u77F3\u7ECF\u5178|\u516D\u4EBA\u4E94\u5341K"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,\u4E94\u5341K"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5927\u4F17\u8840\u6D41\u6210\u6CB3"
+        gameName: XLCH
+        gameId: 10
+        isOpen: 0
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_DZXLCH_XL
+        wanfaType: hbdz_xueliu
+        showIndex: 9
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u901A\u7528\u73A9\u6CD5"
+      - img: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6D60\u6C34\u6253\u4E03"
+        gameName: DAQI
+        gameId: 11
+        isOpen: 1
+        package: daqi
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_DAQI_DAQI
+        wanfaType: 1
+        showIndex: 10
+        tips: "\u6D60\u6C34\u6253\u4E03"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,Main_\u5165\u53E3_\u6251\u514B\u901A\u7528"
+    - key: 2
+      value: "\u5927\u51B6\u5E02"
+      isOpen: 0
+      showIndex: 2
+      playModeList: []
+    - key: 3
+      value: "\u9EC4\u77F3\u5E02"
+      isOpen: 1
+      showIndex: 3
+      playModeList:
+      - img: "HuBei_Main_\u56FE\u6807_\u6643\u6643"
+        hallName: "\u9EC4\u77F3\u6643\u6643"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u9EC4\u77F3\u6643\u6643"
+        gameName: HSHH
+        gameId: 301
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hubei_hshh
+        goldRoomName: "\u9EC4\u77F3\u6643\u6643"
+        createName: DHHUBEIQP_HSHH_HH
+        wanfaType: hubei_hshh
+        showIndex: 1
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "Main_\u5165\u53E3_\u6643\u6643"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u5B57\u724C\u901A\u7528"
+        hallName: "\u5927\u51B6\u5B57\u724C"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5927\u51B6\u5B57\u724C"
+        gameName: DYZP
+        gameId: 302
+        isOpen: 1
+        package: huzi
+        location: 3
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: phz_hubei_dyzp
+        goldRoomName: "\u5927\u51B6\u5B57\u724C"
+        createName: DHHUBEIQP_DYZP_DY
+        wanfaType: phz_hubei_dyzp
+        showIndex: 2
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5927\u51B6\u5B57\u724C"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,HuBei_Main_\u56FE\u6807_\u5F00\u53E3\u756A"
+        hallName: "\u5F00\u53E3\u756A"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5F00\u53E3\u756A"
+        gameName: DYKKF
+        gameId: 303
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hubei_kkf
+        goldRoomName: "\u5F00\u53E3\u756A"
+        createName: DHHUBEIQP_DYKKF_KKF
+        wanfaType: hubei_kkf
+        showIndex: 3
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5F00\u53E3\u756A"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,Main_\u9633\u65B0"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u9633\u65B0\u9EBB\u5C06"
+        gameName: HSYX
+        gameId: 304
+        isOpen: 1
+        package: majiang
+        location: 3
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_HSYX_YX
+        wanfaType: hubei_hsyx
+        showIndex: 4
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u9633\u65B0"
+    - key: 4
+      value: "\u6069\u65BD\u5E02"
+      isOpen: 1
+      showIndex: 4
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u82B1\u724C_\u9009\u62E9\u73A9\u6CD5"
+        hallName: "\u6069\u65BD\u7ECD\u80E1"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6069\u65BD\u7ECD\u80E1"
+        gameName: ESSH
+        gameId: 401
+        isOpen: 1
+        package: huapai
+        location: 4
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_ESSH_SH
+        wanfaType: hp_essh
+        showIndex: 1
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u6069\u65BD\u7ECD\u80E1"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,HuBei_Main_\u56FE\u6807_\u6069\u65BD"
+        hallName: "\u6069\u65BD\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6069\u65BD\u9EBB\u5C06"
+        gameName: ESMJ
+        gameId: 402
+        isOpen: 1
+        package: majiang
+        location: 4
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hbes_ypel|hbes_bpsl
+        goldRoomName: "\u4E00\u75DE\u4E8C\u8D56|\u516B\u75DE\u56DB\u8D56"
+        createName: DHHUBEIQP_ESMJ_YPEL|DHHUBEIQP_ESMJ_BPSL
+        wanfaType: hbes_ypel|hbes_bpsl
+        showIndex: 2
+        tips: "\u4E00\u75DE\u4E8C\u8D56|\u516B\u75DE\u56DB\u8D56"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u6069\u65BD\u9EBB\u5C06"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,HuBei_Main_\u56FE\u6807_\u5229\u5DDD"
+        hallName: "\u5229\u5DDD\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5229\u5DDD\u9EBB\u5C06"
+        gameName: ESLC
+        gameId: 403
+        isOpen: 1
+        package: majiang
+        location: 4
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_ESLC_LC
+        wanfaType: hbmj_eslc
+        showIndex: 3
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5229\u5DDD\u9EBB\u5C06"
+    - key: 5
+      value: "\u9EC4\u5188\u5E02"
+      isOpen: 1
+      showIndex: 5
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,HuBei_Main_\u56FE\u6807_\u6D60\u6C34"
+        hallName: "\u6D60\u6C34\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6D60\u6C34\u9EBB\u5C06"
+        gameName: HGXS
+        gameId: 501
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: dhhg_xsmj
+        goldRoomName: "\u6D60\u6C34\u9EBB\u5C06"
+        createName: DHHUBEIQP_HGXS_XS
+        wanfaType: dhhg_xsmj
+        showIndex: 1
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u6D60\u6C34\u9EBB\u5C06"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,HuBei_Main_\u56FE\u6807_\u7F57\u7530"
+        hallName: "\u7F57\u7530\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7F57\u7530\u9EBB\u5C06"
+        gameName: HGLT
+        gameId: 502
+        isOpen: 1
+        package: majiang
+        location: 5
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_HGLT_LT
+        wanfaType: hbmj_hglt
+        showIndex: 2
+        tips: 
+        cardTheame: 2|0|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u7F57\u7530\u9EBB\u5C06"
+    - key: 6
+      value: "\u5B9C\u660C\u5E02"
+      isOpen: 1
+      showIndex: 6
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u66F4\u591A\u73A9\u6CD5"
+        hallName: "\u79ED\u5F52\u4E0A\u5927\u4EBA"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u79ED\u5F52\u4E0A\u5927\u4EBA"
+        gameName: ZGHP
+        gameId: 601
+        isOpen: 1
+        package: huazhipai
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_ZGHP_ZG
+        wanfaType: hp_zgsdr
+        showIndex: 1
+        tips: "\u79ED\u5F52\u4E0A\u5927\u4EBA"
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u63A8\u8350\u56FE\u6807"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u66F4\u591A\u73A9\u6CD5"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8FDC\u5B89\u7FFB\u7CBE"
+        gameName: YAHP
+        gameId: 602
+        isOpen: 1
+        package: huazhipai
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: hp_yasdr
+        goldRoomName: 
+        createName: DHHUBEIQP_YAHP_YA
+        wanfaType: hp_yasdr|hp_yasdr_xl
+        showIndex: 2
+        tips: "\u8FDC\u5B89\u7FFB\u7CBE|\u8FDC\u5B89\u8840\u6D41"
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u63A8\u8350\u56FE\u6807"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u66F4\u591A\u73A9\u6CD5"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5174\u5C71\u4E0A\u5927\u4EBA"
+        gameName: YCXSHP
+        gameId: 603
+        isOpen: 1
+        package: huazhipai
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_YCXSHP_XS
+        wanfaType: hp_xssdr
+        showIndex: 3
+        tips: "\u5174\u5C71\u4E0A\u5927\u4EBA"
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u63A8\u8350\u56FE\u6807"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u66F4\u591A\u73A9\u6CD5"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5B9C\u660C\u4E0A\u5927\u4EBA"
+        gameName: YCHP
+        gameId: 604
+        isOpen: 1
+        package: huazhipai
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_YCHP_YC
+        wanfaType: hp_ycsdr
+        showIndex: 4
+        tips: "\u5B9C\u660C\u4E0A\u5927\u4EBA"
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u63A8\u8350\u56FE\u6807"
+      - img: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,HuBei_Main_\u56FE\u6807_\u8840\u6D41"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5B9C\u660C\u8840\u6D41"
+        gameName: YCXLCH
+        gameId: 605
+        isOpen: 1
+        package: majiang
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_YCXLCH_XL
+        wanfaType: hbyc_xueliu
+        showIndex: 5
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,\u8840\u6D41\u6210\u6CB3"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u66F4\u591A\u73A9\u6CD5"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5F53\u9633\u7FFB\u7CBE"
+        gameName: YCDYHP
+        gameId: 606
+        isOpen: 1
+        package: huazhipai
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_YCDYHP_DY
+        wanfaType: hp_dysdr
+        showIndex: 6
+        tips: "\u5F53\u9633\u7FFB\u7CBE"
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u63A8\u8350\u56FE\u6807"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u66F4\u591A\u73A9\u6CD5"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u5B9C\u660C\u4E09\u4E94\u7CBE"
+        gameName: YCSWJHP
+        gameId: 607
+        isOpen: 1
+        package: huazhipai
+        location: 6
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHHUBEIQP_YCSWJHP_SWJ
+        wanfaType: hp_swj_sj|hp_swj_wj
+        showIndex: 7
+        tips: "\u4E09\u7CBE\u82B1\u724C|\u4E94\u7CBE\u82B1\u724C"
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,\u5B9C\u660C\u82B1\u724C_\u63A8\u8350\u56FE\u6807"
+    - key: 7
+      value: "\u9102\u5DDE\u5E02"
+      isOpen: 1
+      showIndex: 7
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,HuBei_Main_\u56FE\u6807_\u6643\u6643"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u9102\u5DDE\u6643\u6643"
+        gameName: EZHH
+        gameId: 701
+        isOpen: 1
+        package: majiang
+        location: 7
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hbmj_ezhh
+        goldRoomName: "\u9102\u5DDE\u6643\u6643"
+        createName: DHHUBEIQP_EZHH_HH
+        wanfaType: hbmj_ezhh
+        showIndex: 1
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatahubei.atlas,Main_\u5165\u53E3_\u6643\u6643"
+  - key: 11
+    isOpen: 1
+    isOnline: 1
+    name: "\u65B0\u7586\u7701"
+    shortName: "\u65B0\u7586"
+    gameName: XinJiang
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u65B0\u7586.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u6A58.png"
+    popTag: 0
+    modName: 
+    appName: DHXJQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "XinJiang_Main_\u56FE\u6807_\u6760\u4E0A\u82B1"
+        hallName: "\u65B0\u7586\u6760\u4E0A\u82B1"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u65B0\u7586\u6760\u4E0A\u82B1"
+        gameName: XJGSH
+        gameId: 1
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHXJQP_XJGSH_GSH
+        wanfaType: xjmj_gangshanghua
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataxinjiang.atlas,\u65B0\u7586\u6760\u4E0A\u82B1"
+      - img: "XinJiang_Main_\u56FE\u6807_\u8840\u6218"
+        hallName: "\u8840\u6218\u5230\u5E95"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8840\u6218\u5230\u5E95"
+        gameName: XZDD
+        gameId: 2
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHXJQP_XZDD_XZ
+        wanfaType: xjmj_xuezhan
+        showIndex: 2
+        tips: 
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataxinjiang.atlas,\u65B0\u7586\u8840\u6218\u5230\u5E95"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 3
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHXJQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 3
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+  - key: 12
+    isOpen: 1
+    isOnline: 1
+    name: "\u6FB3\u95E8\u7701"
+    shortName: "\u6FB3\u95E8"
+    gameName: AoMen
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u7518\u8083.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u6A58.png"
+    popTag: 0
+    modName: 
+    appName: DHAMQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 0
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 1
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHAMQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 1
+        tips: "\u7ECF\u5178\u73A9\u6CD5"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 2
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 0
+        goldRoomName: "\u6597\u5730\u4E3B"
+        createName: DHAMQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 2
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "LuAn_Main_\u56FE\u6807_\u516D\u5B89"
+        hallName: "\u516D\u5B89\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u516D\u5B89\u9EBB\u5C06"
+        gameName: LAMJ
+        gameId: 3
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: lamj_liuan
+        goldRoomName: "\u516D\u5B89\u9EBB\u5C06"
+        createName: DHAMQP_LAMJ_LA
+        wanfaType: lamj_liuan
+        showIndex: 3
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u516D\u5B89"
+      - img: "LuAn_Main_\u56FE\u6807_\u970D\u90B1\u9EBB\u5C06"
+        hallName: "\u970D\u90B1\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u970D\u90B1\u9EBB\u5C06"
+        gameName: LAHQ
+        gameId: 4
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: lamj_huoqiu
+        goldRoomName: "\u970D\u90B1\u9EBB\u5C06"
+        createName: DHAMQP_LAHQ_HQ
+        wanfaType: lamj_huoqiu
+        showIndex: 4
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u970D\u90B1"
+  - key: 13
+    isOpen: 1
+    isOnline: 1
+    name: "\u6C5F\u897F\u7701"
+    shortName: "\u6C5F\u897F"
+    gameName: JiangXi
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Province/Public_Electorate_\u62FC\u56FE_\u6C5F\u897F.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u7EFF.png"
+    popTag: 0
+    modName: 
+    appName: DHJXQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7EA2\u4E2D\u9EBB\u5C06"
+        gameName: HZMJ
+        gameId: 1
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJXQP_HZMJ_HZ
+        wanfaType: hzmj_v2
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 3
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHJXQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 2
+        tips: "\u7ECF\u5178\u73A9\u6CD5"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 4
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHJXQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 3
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 7
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJXQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 4
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u98D8\u4E09\u53F6"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u98D8\u4E09\u53F6"
+        gameName: ZHAJINHUA
+        gameId: 6
+        isOpen: 0
+        package: zhajinhua
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJXQP_ZHAJINHUA_ZHAJINHUA
+        wanfaType: 0
+        showIndex: 5
+        tips: "\u98D8\u4E09\u53F6"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "public/module/setplaymodedata/public_setplaymodedatahunan.atlas,HuNan_Main_\u56FE\u6807_\u8F6C\u8F6C"
+        hallName: "\u8F6C\u8F6C\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8F6C\u8F6C\u9EBB\u5C06"
+        gameName: ZZMJ
+        gameId: 8
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJXQP_ZZMJ_ZZ
+        wanfaType: csmj_zhuanzhuan
+        showIndex: 6
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "Main_\u5165\u53E3_\u901A\u7528\u73A9\u6CD5"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u5341\u4E09\u5F20"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5341\u4E09\u5F20"
+        gameName: SHISANZHANG
+        gameId: 9
+        isOpen: 0
+        package: shisanzhang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJXQP_SHISANZHANG_SSZ
+        wanfaType: 0
+        showIndex: 7
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+    - key: 2
+      value: "\u4E5D\u6C5F\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatajiangxi.atlas,JiangXi_Main_\u56FE\u6807_\u6E56\u53E3"
+        hallName: "\u6E56\u53E3\u9EBB\u5C06"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6E56\u53E3\u9EBB\u5C06"
+        gameName: JJHK
+        gameId: 201
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHJXQP_JJHK_HK
+        wanfaType: jxqp_jjhk
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatajiangxi.atlas,\u6E56\u53E3\u9EBB\u5C06"
+  - key: 14
+    isOpen: 1
+    isOnline: 1
+    name: "\u5C71\u897F\u7701"
+    shortName: "\u5C71\u897F"
+    gameName: ShanXi
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/HotFix/Public_Electorate_\u62FC\u56FE_\u5C71\u897F.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u7EFF.png"
+    popTag: 0
+    modName: 
+    appName: DHSHXQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u62FC\u5341"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u62FC\u5341"
+        gameName: BULLFIGHT
+        gameId: 1
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHSHXQP_BULLFIGHT_BF
+        wanfaType: 0|1|2
+        showIndex: 1
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: "\u6597\u5730\u4E3B"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 2
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSHXQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 2
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u8DD1\u5F97\u5FEB"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 3
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSHXQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 3
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: "\u98D8\u4E09\u53F6"
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u98D8\u4E09\u53F6"
+        gameName: ZHAJINHUA
+        gameId: 4
+        isOpen: 0
+        package: zhajinhua
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSHXQP_ZHAJINHUA_ZHAJINHUA
+        wanfaType: 0
+        showIndex: 4
+        tips: "\u98D8\u4E09\u53F6"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+    - key: 2
+      value: "\u5415\u6881\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatashanxi.atlas,ShanXi_Main_\u56FE\u6807_\u62A0\u70B9"
+        hallName: "\u5415\u6881\u62A0\u70B9"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5415\u6881\u62A0\u70B9"
+        gameName: KDDMJ
+        gameId: 201
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSHXQP_KDDMJ_KDD
+        wanfaType: majiangshanxi_shanxi_llkdd
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatashanxi.atlas,\u5415\u6881\u62A0\u70B9"
+  - key: 15
+    isOpen: 0
+    isOnline: 0
+    name: "\u7518\u8083\u7701"
+    shortName: "\u7518\u8083"
+    gameName: GanSu
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/HotFix/Public_Electorate_\u62FC\u56FE_\u5C71\u897F.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u7EFF.png"
+    popTag: 1
+    modName: 
+    appName: DHGSQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: "\u5E73\u51C9\u63A8\u5012\u80E1"
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u5E73\u51C9\u63A8\u5012\u80E1"
+        gameName: PLMJ
+        gameId: 1
+        isOpen: 0
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHGSQP_PLMJ_TDH
+        wanfaType: gsmj_pltdh
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+  - key: 16
+    isOpen: 1
+    isOnline: 1
+    name: "\u56DB\u5DDD\u7701"
+    shortName: "\u56DB\u5DDD"
+    gameName: SiChuan
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/HotFix/Public_Electorate_\u62FC\u56FE_\u5C71\u897F.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u7EFF.png"
+    popTag: 1
+    modName: 
+    appName: DHSCQP
+    tips: 
+    configs:
+    - key: 2
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 201
+        isOpen: 1
+        package: runfast
+        location: 2
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHSCQP_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 1
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 202
+        isOpen: 1
+        package: doudizhu
+        location: 2
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSCQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 2
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+    - key: 1
+      value: "\u7709\u5C71\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedatasichuan.atlas,\u56DB\u5DDD_\u7709\u5C71_\u4EC1\u5BFF"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u4EC1\u5BFF\u8840\u6218"
+        gameName: RSXZ
+        gameId: 1
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHSCQP_RSXZ_RS
+        wanfaType: dhscqp_rsxz
+        showIndex: 1
+        tips: 
+        cardTheame: 2|2|3
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatasichuan.atlas,\u56DB\u5DDD_\u7709\u5C71_\u4EC1\u5BFF_\u5927"
+  - key: 17
+    isOpen: 1
+    isOnline: 1
+    name: "\u597D\u5F69"
+    shortName: "\u597D\u5F69"
+    gameName: HAOCAI
+    btnIcon: 
+    btnName: None
+    popIcon: 
+    popTag: 0
+    modName: 
+    appName: HAOCAI
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 1
+        isOpen: 1
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: HAOCAI_RUNFAST_RUNFAST
+        wanfaType: 2
+        showIndex: 1
+        tips: "\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 2
+        isOpen: 1
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: HAOCAI_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 2
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5927\u7406\u8DD1\u5F97\u5FEB"
+        gameName: RUNFASTDL
+        gameId: 3
+        isOpen: 1
+        package: quickrun
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: pdk_3
+        goldRoomName: "\u5927\u7406\u8DD1\u5F97\u5FEB"
+        createName: HAOCAI_RUNFASTDL_RUNFASTDL
+        wanfaType: 2
+        showIndex: 3
+        tips: "\u5927\u7406\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5927\u7406\u63A8\u5012\u80E1"
+        gameName: DLTDH
+        gameId: 4
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: HAOCAI_DLTDH_TDH
+        wanfaType: dlmj_tdh
+        showIndex: 4
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataguangxi.atlas,\u5317\u6D77\u63A8\u5012\u80E1"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u5927\u7406\u8840\u6218"
+        gameName: DLXZDD
+        gameId: 5
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: HAOCAI_DLXZDD_XZ
+        wanfaType: dlmj_xzdd
+        showIndex: 5
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataxinjiang.atlas,\u65B0\u7586\u8840\u6218\u5230\u5E95"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u98DE\u5C0F\u9E21"
+        gameName: QJMJFXJ
+        gameId: 6
+        isOpen: 1
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: ynqj_feixiaoji
+        goldRoomName: "\u98DE\u5C0F\u9E21"
+        createName: HAOCAI_QJMJFXJ_FXJ
+        wanfaType: ynqj_feixiaoji
+        showIndex: 6
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatayunnan.atlas,Main_\u5165\u53E3_\u98DE\u5C0F\u9E21"
+  - key: 18
+    isOpen: 1
+    isOnline: 1
+    name: "\u8FBD\u5B81\u7701"
+    shortName: "\u8FBD"
+    gameName: LiaoNing
+    btnIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/HotFix/Public_Electorate_\u62FC\u56FE_\u8FBD\u5B81.png"
+    btnName: None
+    popIcon: "Assets/Game/PackagingResources/Public/Module/SetProvince/Image/Public_Electorate_\u9009\u4E2D_\u84DD.png"
+    popTag: 0
+    modName: 
+    appName: DHLNQP
+    tips: 
+    configs:
+    - key: 1
+      value: "\u5927\u4F17\u73A9\u6CD5"
+      isOpen: 1
+      showIndex: 1
+      playModeList:
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u7EA2\u4E2D\u9EBB\u5C06"
+        gameName: HZMJ
+        gameId: 1
+        isOpen: 0
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: hzmj_v2
+        goldRoomName: "\u7EA2\u4E2D\u9EBB\u5C06"
+        createName: DHAHQP_HZMJ_HZ
+        wanfaType: hzmj_v2
+        showIndex: 1
+        tips: 
+        cardTheame: 0|0|1
+        headIcon: "Main_\u5165\u53E3_\u7EA2\u4E2D"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6BD4\u9E21"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "BiJi_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u6B22\u4E50\u6BD4\u9E21"
+        gameName: BIJI
+        gameId: 2
+        isOpen: 0
+        package: biji
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_BIJI_BJ
+        wanfaType: 0|1|2
+        showIndex: 2
+        tips: "\u6B22\u4E50\u6BD4\u9E21|\u8212\u57CE\u6BD4\u9E21|\u516D\u4EBA\u6BD4\u9E21"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u6BD4\u9E21"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6781\u901F\u8DD1\u5F97\u5FEB"
+        gameName: RUNFAST
+        gameId: 3
+        isOpen: 0
+        package: runfast
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 1
+        playTypeName: pdk_3
+        goldRoomName: "\u8DD1\u5F97\u5FEB"
+        createName: DHAHQP_RUNFAST_RUNFAST
+        wanfaType: 1|2
+        showIndex: 3
+        tips: "\u5B89\u5FBD\u5173\u724C|\u7ECF\u5178\u8DD1\u5F97\u5FEB"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6781\u901F\u8DD1\u5F97\u5FEB"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u6781\u901F\u725B\u4ED4"
+        gameName: BULLFIGHT
+        gameId: 4
+        isOpen: 0
+        package: cowboy
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: bullfight
+        goldRoomName: 
+        createName: DHAHQP_BULLFIGHT_BF
+        wanfaType: 0|1|2|3
+        showIndex: 4
+        tips: "\u8F6E\u6D41\u5750\u5E84|\u968F\u673A\u5750\u5E84|\u770B\u724C\u62A2\u5E84|\u70B8\u91D1\u725B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u62FC\u5341"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6B22\u4E50\u63BC\u86CB"
+        gameName: GUANDAN
+        gameId: 5
+        isOpen: 0
+        package: guandan
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_GUANDAN_GD
+        wanfaType: 0|1
+        showIndex: 5
+        tips: "\u56E2\u56E2\u8F6C|\u7ECF\u5178\u73A9\u6CD5"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u901A\u7528\u6597\u5730\u4E3B"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 1
+        name: "\u6597\u5730\u4E3B"
+        gameName: DOUDIZHU
+        gameId: 7
+        isOpen: 0
+        package: doudizhu
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_DOUDIZHU_DOUDIZHU
+        wanfaType: 0
+        showIndex: 6
+        tips: "\u6597\u5730\u4E3B"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6597\u5730\u4E3B"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u98D8\u4E09\u53F6"
+        gameName: ZHAJINHUA
+        gameId: 6
+        isOpen: 0
+        package: zhajinhua
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_ZHAJINHUA_ZHAJINHUA
+        wanfaType: 0
+        showIndex: 7
+        tips: "\u98D8\u4E09\u53F6"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "Public_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u902E\u72D7\u817F"
+        gameName: DAIGOUTUI
+        gameId: 8
+        isOpen: 0
+        package: daigoutui
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_DAIGOUTUI_DAIGOUTUI
+        wanfaType: 0
+        showIndex: 8
+        tips: "\u902E\u72D7\u817F"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6251\u514B\u901A\u7528"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u7EA2\u4E2D"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u6362\u6362\u9EBB\u5C06"
+        gameName: DZHH
+        gameId: 9
+        isOpen: 0
+        package: majiang
+        location: 1
+        isOnline: 1
+        isOpenGold: 1
+        isOpenMatch: 0
+        playTypeName: wbmj_huanhuan
+        goldRoomName: "\u6362\u6362\u9EBB\u5C06"
+        createName: DHAHQP_DZHH_HH
+        wanfaType: wbmj_huanhuan
+        showIndex: 9
+        tips: "\u6362\u6362"
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u6362\u6362"
+      - img: "Public_Electorate_\u6309\u94AE_\u56FE\u6807_\u6251\u514B\u901A\u7528"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 3
+        name: "\u5341\u4E09\u5F20"
+        gameName: SHISANZHANG
+        gameId: 10
+        isOpen: 0
+        package: shisanzhang
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_SHISANZHANG_SSZ
+        wanfaType: 0
+        showIndex: 10
+        tips: 
+        cardTheame: 
+        headIcon: "Main_\u5165\u53E3_\u98D8\u4E09\u53F6"
+      - img: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,\u66F4\u591A\u73A9\u6CD5
+          \u53EB\u5BB6\u5B50"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u53EB\u5BB6\u5B50"
+        gameName: JIAOJIAZI
+        gameId: 11
+        isOpen: 0
+        package: jiaojiazi
+        location: 1
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHAHQP_JIAOJIAZI_JIAOJIAZI
+        wanfaType: 1|2
+        showIndex: 11
+        tips: "\u5B89\u5E86\u4E09\u526F|\u5B89\u5E86\u4E8C\u526F"
+        cardTheame: 
+        headIcon: "public/module/setplaymodedata/public_setplaymodedatapublic.atlas,\u63A8\u8350\u73A9\u6CD5-\u53EB\u5BB6\u5B50"
+    - key: 2
+      value: "\u8425\u53E3\u5E02"
+      isOpen: 1
+      showIndex: 2
+      playModeList:
+      - img: "public/module/setplaymodedata/public_setplaymodedataliaoning.atlas,Main_\u8425\u53E3"
+        hallName: 
+        bg: BackgroundHongZhong
+        btnImg: "HongZhong_Main_\u5165\u53E3_\u56FE\u6807_"
+        tag: 0
+        name: "\u8425\u53E3\u9EBB\u5C06"
+        gameName: YKMJ
+        gameId: 201
+        isOpen: 1
+        package: majiang
+        location: 2
+        isOnline: 1
+        isOpenGold: 0
+        isOpenMatch: 0
+        playTypeName: 
+        goldRoomName: 
+        createName: DHLNQP_YKMJ_YK
+        wanfaType: lnmj_yingkou
+        showIndex: 1
+        tips: 
+        cardTheame: 1|1|2
+        headIcon: "public/module/setplaymodedata/public_setplaymodedataliaoning.atlas,\u8425\u53E3"

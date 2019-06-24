@@ -1,0 +1,42 @@
+{
+    "group": "WeChatSDK",
+    "libs": ["libz.dylib", "libsqlite3.0.dylib", "libc++.dylib", "libresolv.tbd"],
+    "frameworks": ["SystemConfiguration.framework", "CoreTelephony.framework", "Security.framework", "UserNotifications.framework","AssetsLibrary.framework"],
+    "headerpaths": [],
+    "files": [],
+    "folders": [],
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$", "^.*.txt$", "^.*.DS_Store$"],
+    "compiler_flags": [],
+	"linker_flags": [],
+    "plist": {
+        "AllowMixedLocalizations" : true,
+        "urltype" : [
+            {
+                "role": "Editor",
+                "name" : "weixin",
+                "schemes":["wxc447c56c56f0ddde"]
+            },
+            {
+                "role": "Editor",
+                "name" : "weixin2",
+                "schemes":["wxa7446ca0dfc1c72d"]
+            },
+            {
+                "role": "Editor",
+                "name" : "mw",
+                "schemes":["dhqpyx"]
+            },
+            {
+                "role": "Editor",
+                "name" : "xianliao",
+                "schemes":["xianliaoeNaWBnQnErlT2akM"]
+            },
+            {
+                "role": "Editor",
+                "name" : "liaobei",
+                "schemes":["lbOKNaVz7RECkN"]
+            },
+        ],
+        "queriesschemes" : ["weixin", "wechat","alipay","alipays", "xianliao", "liaobeisdk"]
+    }
+}

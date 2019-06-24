@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message GM_LoginQueen_Info{
+	required int32 queenlen=1;//队伍长度
+	required int32 yourplace=2;//你在的位置
+	required int32 waitsec=3;//等待时间
+}

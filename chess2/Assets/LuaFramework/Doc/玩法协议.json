@@ -1,0 +1,59 @@
+{
+    "games": [
+        {
+            "titile": "安庆点炮",
+            "state": "enable|disable",
+            "data": [{
+                    "name": "局数",
+                    "data": [
+                        {
+                            //在同一个玩法中唯一
+                            "id": "1",
+                            "name": "8局（房卡x1）",
+                            //toggle的类型，比如1显示“圆圈” 2代表“勾”
+                            "toggle_type": 1,
+                            "toggle_group": 11
+                        },
+                        {
+                            "id": "2",
+                            "name": "16局（房卡x2）",
+                            "toggle_type": 1,
+                            "toggle_group": 11
+                        }
+                    ]
+                },
+                 {
+                    "name": "玩法",
+                    "data": [
+                        {
+                            "id": "101",
+                            "name": "可点炮",
+                            "condition": "",
+                            "toggle_type": 2
+                        },
+                        {
+                            "id": "102",
+                            "name": "一炮多响",
+                            //可操作的条件,模拟if语句。比如这句话表示当“101”开启，显示出一炮多响可操作
+                            "condition": "102",
+                            "toggle_type": 2
+                        }
+                    ]
+                },
+                {
+                    "name": "底花",
+                    "data": [
+                        {
+                            "id": "11",
+                            "name": "8局（房卡x1）",
+                            "condition": "1=",
+                            "toggle_type": 1
+                        }
+                    ]
+                }]
+            }
+        
+    ]
+}
+
+//发送给服务器的数组，即为选项的ID数值 ：[1, 101]

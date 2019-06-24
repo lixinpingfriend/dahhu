@@ -1,0 +1,31 @@
+package Login;
+
+message LoginReq
+{
+	required string account = 1;
+	required string token = 2;
+}
+
+message LoginRsp
+{
+	required string account = 1;
+	required string token = 2;
+	required int32 room_id = 3;
+}
+
+message PingReq
+{
+	
+}
+
+message PingRsp
+{
+	
+}
+
+message Ready
+{
+	
+}
+
+

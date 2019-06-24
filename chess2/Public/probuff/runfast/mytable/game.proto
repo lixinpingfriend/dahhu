@@ -1,0 +1,191 @@
+syntax = "proto2";
+package Game;
+
+//玩家比赛场信息
+message PlayerMatchInfo {
+	optional int32 rank = 1;   //名次
+	optional int32 playedLoops = 2;  //已参与轮数, ps: round已表示局，使用loop表示轮
+	optional bool  isKnockout = 3;   //是否被淘汰
+}
+
+//比赛场信息
+message MatchInfo {
+	required int32 matchId = 1;  //比赛场ID
+	optional int32 stageId = 2;  //第几期
+	optional int32 loopNo = 3;   //当前第几轮
+	optional int32 roundNo = 4;  //当前第几局
+	optional int32 knockoutScore = 5;  //淘汰分
+	optional int32 baseScore = 6; //当前底分
+	optional int32 playersCount = 7;  //比赛剩余人数
+}
+
+message Player {
+	required int32 	player_id=1;//玩家ID
+	required int32  player_pos=2;//玩家位置
+	required bool 	is_single=3;//是否报单
+	required bool  	is_offline=4;      //是否掉线
+	required bool  	is_owner=5;//是否为房间所有者
+	required bool  	is_ready=6;
+	required int32  score=7;//积分
+	required int32  win_cnt=8;         //胜利次数
+	required int32  lost_cnt=9;      //胜利次数
+	optional int32  bomb_cnt=10;	//炸弹数量  
+	optional int32  rest_card_cnt=11;	//剩余牌数量 
+	optional int32  enter_cnt = 12 ; //进入房间次数
+	optional int32  coinBalance=13;//金币余额
+	optional int32  state=14;//状态 0 正常 1托管 2破产
+	optional PlayerMatchInfo matchInfo = 15;
+}
+
+//单播 游戏信息 登录或者断线重连时发送
+message GameInfo{
+	required int32 room_id=1;//房间号
+	repeated Player players=2; 
+	required int32 game_loop_cnt=3;//当前游戏局数
+	required int32 game_total_cnt=4;//游戏总局数
+	required int32 desk_player_id=5;//上一个已经出牌的玩家
+	repeated int32 desk_cards=6;//上一个已经出牌的玩家所出的牌
+	required int32 next_player_id=7;//下一个需要出牌的玩家
+	required int32 time=8;//服务器时间cuo
+	repeated int32 cards=9;//手牌
+	required int32 max_player_cnt=10;//两人游戏或者三人游戏
+	optional string stage_desc=11;//房间描述信息
+	repeated int32 observers=12;//观察者清单
+	optional int32 rate=13;//底分
+	optional bool is_opening_cards = 14; //是否为开局发牌（只在开局发牌时才有该字段）
+	optional int32  black3_player = 15;//只有首局才为非零
+	optional int32 discard_serial_no = 16;//出牌序列号
+	optional int32 reconn_player_id = 17;//断线重连的玩家ID
+	optional int32 feeNum = 18; //金币场台费
+	optional int32 baseCoinScore = 19; //金币场底分
+	required int32 gamePhaseState = 20; //1:进入房间等人准备阶段   2:游戏进行阶段   3:游戏结算准备阶段
+	optional string roomTitle = 21;  //房间标题
+	optional MatchInfo matchInfo = 22;  //比赛场信息
+	optional int32 goldFieldId = 23;   //金币场ID
+	optional int32 tableType = 24;   //0好友场  1金币场  2比赛场
+	optional uint32 minEnterGoldNum = 25; //最低入场金币
+    optional uint32 maxEnterGoldNum = 26; //最高入场金币
+}
+
+//广播 结算信息 一把打玩发送
+message CurrentGameAccount
+{
+	message Player{
+		required int32 	player_id=2;//玩家ID
+		required int32 	remain_card_cnt=3;//剩余牌数
+		required int32	bomb_cnt=4;//总炸弹数
+		required int32 	score=5;//总积分
+		optional int32  win_cnt=6;         //胜利次数
+		optional int32  lost_cnt=7;      //胜利次数
+		optional int32 	current_score=8; //本局积分
+		optional int32	current_bomb_cnt=9; //本局炸弹数
+		optional string	played_cards =10; //出牌记录
+		optional string	cards = 11; //手牌
+		optional int32  coin=12;//实际扣除/到账的金币输赢
+		optional int32  restCoin=13;//未结清的金币输赢
+		optional int32  coinBalance=14;//金币余额
+		optional int32  state=15;//状态 0 正常 1托管 2破产
+		optional PlayerMatchInfo matchInfo = 16;   //比赛相关信息， matchInfo.rank，对于比赛场为0表示玩家未淘汰，非0表示玩家被淘汰的名次
+	}
+	repeated Player players = 1;
+	optional string	endTime = 12; //牌局结束时间(秒)
+	optional int32  game_count=13;//总游戏局数
+	optional bool   is_summary_account=14;//是否大结
+	optional int32 first_player_id=15;//先手的玩家ID
+	optional bool  is_free_room = 16; //是否是解散房间
+	optional string  startTime = 17; //牌局开始时间(秒)
+	optional int32 pay_all_player=18; //包陪玩家，为0或者不存在时表示没有产生包赔。
+	optional int32 baseCoinScore = 19; //金币场底分
+	optional int32 free_sponsor=20;//解散房间发起者（正常结束为空）
+	required int32 gamePhaseState = 21; //1:进入房间等人准备阶段   2:游戏进行阶段   3:游戏结算准备阶段
+	optional bool IsChangeRoomWhileRestart = 22; // 点继续游戏时是否触发换桌 (金币场房间小结算时使用)
+	optional MatchInfo matchResult = 23;  //比赛结果，在比赛场模式有效
+	optional int32 red10_player = 24;//红桃10加倍的玩家
+	optional int32 winner_id = 25; //本局赢家id
+}
+
+//广播 下行的出牌通知,收到玩家出牌信息后，如果出牌合法，则广播该通知
+message DiscardNotify
+{
+	required int32  player_id=1;//出牌的玩家ID
+	required bool   is_passed=2;//是否要不起，即过牌
+	repeated int32  cards=3;//当前出牌，如过牌，则此处为空数组
+	required int32  warning_flag=4;//警告标志
+	required int32  next_player_id=5;//下一个需要出牌的玩家
+	required int32  rest_card_cnt=6;//当前玩家剩余牌数，一般不会发，除非房间属性指定要发
+	required bool   is_first_pattern=7;//下一个玩家是否首发
+	optional int32  black3_player = 8;//只有首局才为非零
+	optional int32  discard_serial_no = 9;//出牌序列号
+	optional bool   next_player_discard_bomb=10;//表示下一个需要的玩家是否以炸弹出大。客户端应该同时判断is_first_pattern是否为真
+}
+
+//单播 收到玩家出牌信息后，下行的出牌回复 
+message DiscardReply{
+	required bool   is_ok=1;//是否出牌成功 
+	required string desc=2;//错误描述信息 牌型错误、未轮到玩家出牌、不能过牌
+	repeated int32  cards=3;//当前手牌
+}
+
+//玩家上行的出牌信息
+message DiscardInfo{
+	required bool   is_passed=1;//是否要不起，即过牌
+	repeated int32  cards=2;//当前出牌牌，如果过牌则此处为空数组
+	optional int32  discard_serial_no = 3;//出牌序列号
+	optional string  client_click_method = 4;//客户端点击方式
+}
+
+//以下为透传信息，服务端不关注内容直接转发给观察者。
+message UpCards{
+  required int32  player_id=1;//玩家ID
+  required bool   isUp=2;//是否上去
+  repeated int32  cards=3;//牌
+}
+
+/**
+* 计牌器消息，玩家通过道具系统购买，用于记录一局牌中桌面上除玩家自己未打出去的牌
+* 计牌器消息在每局开始、玩家正确出牌和断线重连时推送，只推购买了计牌器且有效的玩家
+*/
+message CardRecorderMsg {
+	required int32 playerId = 1;  //玩家ID
+	required int32 effectiveDuration = 2;  //计牌器道具有效时长，单位：秒
+	repeated CardItem items = 3;  //剩余牌列表
+	message CardItem {
+		required int32 cardName = 1;  //牌名, 取值参考CardCommon类的定义
+		required int32 remainCount = 2;  //剩余张数
+	}
+}
+
+//记牌器状态请求
+message CardRecorderStatuReq
+{
+}
+//记牌器状态回应
+message CardRecorderStatuRsp
+{
+	required int32 status = 1;  //0:没有记牌器   1:已经拥有记牌器
+}
+
+message PlayerRank {
+    required int32 playerId = 1;
+    required int32 rank = 2;
+    required int32 score = 3;
+}
+//玩家比赛名次通知消息 (该消息是主动推送的，只包含当前房间内的玩家)
+message PlayerMatchRanksNotify {
+	repeated PlayerRank playerRanks = 1;
+}
+
+//实时排行榜申请
+message MatchRankReq {
+	required int32 matchId = 1;  //比赛场ID
+	optional int32 stageId = 2;  //第几期
+}
+
+//实时排行榜响应 （该消息需要请求，包含比赛场内所有比赛中玩家的积分）
+message MatchRankRsp {
+	required int32 matchId = 1;  //比赛场ID
+	optional int32 stageId = 2;  //第几期
+	optional int32 loopNo = 3;   //当前第几轮
+    repeated PlayerRank playerRanks = 5; //用户详情、包含积分、临时排名;该字段第一轮开始时没数据
+}
+

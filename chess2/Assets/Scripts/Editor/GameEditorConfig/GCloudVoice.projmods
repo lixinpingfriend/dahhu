@@ -1,0 +1,13 @@
+{
+    "group": "GCloudVoice",
+    "libs": ["libstdc++.6.0.9.tbd"],
+    "frameworks": ["CoreAudio.framework", "CoreTelephony.framework", "AVFoundation.framework", "AudioToolbox.framework", "SystemConfiguration.framework"],
+    "headerpaths": [],
+    "files": [],
+    "folders": [],
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$", "^.*.txt$", "^.*.DS_Store$"],
+    "compiler_flags": [],
+    "linker_flags": [],
+    "plist": {
+    }
+}

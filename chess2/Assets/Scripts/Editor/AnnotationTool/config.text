@@ -1,0 +1,60 @@
+{
+    "list":[
+        {
+            "name":"C#",
+            "extension":"*.cs",
+            "multiLineStartStr":"/*",
+            "multiLineEndStr":"*/",
+            "singleLineStartStr":"//",
+            "sensitiveWords":["作者", "修改者", "联系", "Author:", "author:", "email", "Email", "mail", "@qq.com", "@163.com", "@126.com", "Dred", "by jonny"]
+        },
+        {
+            "name":"Lua",
+            "extension":"*.lua",
+            "multiLineStartStr":"--[[",
+            "multiLineEndStr":"--]]",
+            "singleLineStartStr":"--",
+            "sensitiveWords":["作者", "修改者", "联系", "Author:", "author:", "email", "Email", "mail", "@qq.com", "@163.com", "@126.com", "Dred", "by jonny"]
+        },
+        {
+            "name":"C",
+            "extension":"*.c",
+            "multiLineStartStr":"/*",
+            "multiLineEndStr":"*/",
+            "singleLineStartStr":"//",
+            "sensitiveWords":["作者", "修改者", "联系", "Author:", "author:", "email", "Email", "mail", "@qq.com", "@163.com", "@126.com", "Dred", "by jonny"]
+        },
+        {
+            "name":"C++",
+            "extension":"*.cpp",
+            "multiLineStartStr":"/*",
+            "multiLineEndStr":"*/",
+            "singleLineStartStr":"//",
+            "sensitiveWords":["作者", "修改者", "联系", "Author:", "author:", "email", "Email", "mail", "@qq.com", "@163.com", "@126.com", "Dred", "by jonny"]
+        },
+        {
+            "name":"C",
+            "extension":"*.h",
+            "multiLineStartStr":"/*",
+            "multiLineEndStr":"*/",
+            "singleLineStartStr":"//",
+            "sensitiveWords":["作者", "修改者", "联系", "Author:", "author:", "email", "Email", "mail", "@qq.com", "@163.com", "@126.com", "Dred", "by jonny"]
+        },
+        {
+            "name":"oc",
+            "extension":"*.m",
+            "multiLineStartStr":"/*",
+            "multiLineEndStr":"*/",
+            "singleLineStartStr":"//",
+            "sensitiveWords":["作者", "修改者", "联系", "Author:", "author:", "email", "Email", "mail", "@qq.com", "@163.com", "@126.com", "Dred", "by jonny"]
+        },
+        {
+            "name":"oc",
+            "extension":"*.mm",
+            "multiLineStartStr":"/*",
+            "multiLineEndStr":"*/",
+            "singleLineStartStr":"//",
+            "sensitiveWords":["作者", "修改者", "联系", "Author:", "author:", "email", "Email", "mail", "@qq.com", "@163.com", "@126.com", "Dred", "by jonny"]
+        }
+    ]
+}

@@ -1,0 +1,221 @@
+syntax = "proto2";
+
+//本文件定义客户端与游戏服务器的交互命令
+
+//----------------------------------------------------------------------------------
+//以下为客户端发给服务器的命令和回应
+
+//命令ID：1，心跳包
+message CMD_HeartBeat
+{
+}
+message RSP_HeartBeat
+{
+}
+
+//命令ID：2，登录到游戏服务器
+message CMD_LoginServer
+{
+	optional string Password = 1;  //用户临时密码
+	optional uint32 RoomID = 2; //房间号
+	optional uint32 SeatID = 3; //座位号
+	optional string AppendData = 4; //用户附加数据，内容格式由客户端自行定义
+	optional uint32 ProtoVersion = 5;//协议版本。固定为1
+	optional string ClientVersion = 6;//客户端版本
+	optional uint64 UserID = 7;//用户ID
+}
+message RSP_LoginServer
+{
+	optional int32 Error = 1;  //0表示成功，非0表示服务器拒绝  错误码描述： -1：密码错误或为空、座位号超出 -2 ：房间不存在  -3 ：用户已不在房间
+	optional string ChatRoom = 2; //语音聊天室信息
+	optional string ErrInfo = 3;//如果拒绝，则表示详细描述。
+	optional string PlayRule = 4;//玩法规则
+}
+
+//命令ID：3，请求退出房间
+message CMD_ExitRoom
+{
+}
+message RSP_ExitRoom
+{
+	optional int32 Error = 1; //0表示已退出，非0不允许退出
+}
+
+//命令ID：4，聊天信息（包括文字、表情、语音等）
+message CMD_Message {
+	optional string Message = 1; //内容格式由客户端自行定义
+	optional string AppendData = 2;	//客户端附加数据(目前用于存储GPS数据)
+}
+//该命令没有回应
+
+//命令ID：5，请求查询数据
+message CMD_QueryData
+{
+	optional string Password = 1;  //用户临时密码
+	optional uint64 QueryID = 2; //查询号
+}
+message RSP_QueryData
+{
+	optional int32 Error = 1;  //0表示成功，非0表示服务器拒绝
+}
+
+
+//命令ID：6，申请解散房间
+message CMD_Dismiss
+{
+	optional int32 Action = 1;//1:申请解散 2:同意解散 3:拒绝解散
+}
+//该命令没有回应
+
+
+//命令ID：7，踢出用户
+message CMD_KickUser
+{
+	optional uint64 UserID = 1;//用户ID
+}
+//该命令没有回应
+
+//命令ID：8，单独聊天信息（包括文字、表情、语音等）
+message CMD_Private_Message {
+	optional uint32 SeatID = 1; //接收方的座位号
+	optional string Message = 2; //内容格式由客户端自行定义
+}
+//该命令没有回应
+
+// 命令ID: 9, 玩家上报状态
+message CMD_ReportState
+{
+	optional int32 State = 1; // 值和含义由客户端自行定义
+}
+// 该命令没有回应
+
+//命令ID: 10，获取踢人倒计时时间，如果服务端没有开始倒计时，此命令不会收到响应
+message CMD_GET_KICKED_TIMEOUT
+{
+}
+// 该命令只有正在倒计时踢人时才有回应
+
+//命令ID：11，申请立即开始
+message CMD_StartNow
+{
+	optional int32 Action = 1;//1:申请开始 2:同意开始 3:拒绝开始
+	optional int32 PlayerCount = 2;//人数
+}
+//该命令没有回应
+
+//信息内容
+message TempInfoData
+{
+	optional int32 Id = 1;		//ID
+	optional string Note = 2;	//类容
+}
+
+//命令ID：12，更新信息
+message CMD_UpdateTempInfo
+{
+	repeated TempInfoData Data= 1;	//内容
+}
+
+
+//----------------------------------------------------------------------------------
+
+//以下为服务器主动发给客户端的信息
+
+//命令ID: 101，房间内的用户信息
+message NTF_RoomUserInfo
+{  
+	optional uint32 SeatID = 1; //座位号
+	optional uint64 UserID = 2; //用户ID。为0表示该座位的上的用户已离开。
+	optional string AppendData = 3; //用户附加数据，与CMD_LoginServer中的AppendData一致
+	optional int32 State = 4;	//用户状态信息：0、在线；1、离开（休息）；2、离线
+}
+
+//命令ID：102，相同用户已在另一地点登录，当前用户已被迫下线
+message NTF_SameUserLogin
+{
+	optional uint32 IP = 1; //另一用户的IP地址
+}
+
+//命令ID: 103，房间内的用户上线
+message NTF_RoomUserOnline {  
+	optional uint32 SeatID = 1; //座位号
+	optional uint32 IP = 2; //用户的IP地址
+	optional string AppendData = 3; //用户附加数据，与CMD_LoginServer中的AppendData一致
+	optional int32 State = 4;	//用户状态信息：-1、在线；1、离开（休息）；2、离线
+}
+
+//命令ID: 104，房间内的用户离线
+message NTF_RoomUserOffline
+{  
+	optional uint32 SeatID = 1; //座位号
+}
+
+//命令ID: 105，房间已解散
+message NTF_RoomDismissed
+{  
+}
+
+//命令ID: 106，聊天信息
+message NTF_Message
+{
+	optional uint32 SeatID = 1; //发送人的座位号。为~0u表示系统广播消息。
+	optional string Message = 2; //与CMD_Message结构中的Message一致。如果是系统广播消息，则其格式由广播系统与客户端议定。
+}
+
+//命令ID：107，房间解散回应状态
+message NTF_Dismiss
+{
+	repeated int32 Action = 1;//各个用户的回应。0:未回应 1:申请解散 2:同意解散 3:拒绝解散。如果为空，则表示房间已拒绝解散，游戏继续。
+	optional uint32 Time = 2;//还剩多少秒自动解散
+}
+
+//命令ID: 108，已被踢出
+message NTF_Kicked
+{  
+}
+
+//命令ID: 109，单独聊天信息
+message NTF_Private_Message
+{
+	optional uint32 SeatID = 1; //发送人的座位号。为~0u表示系统消息。
+	optional string Message = 2; //与CMD_Private_Message结构中的Message一致。如果是系统广播消息，则其格式由广播系统与客户端议定。
+}
+
+// 命令ID: 110，玩家即时反馈的状态
+message NTF_ReportState
+{
+	required uint32 SeatID = 1; // 反馈状态的玩家的座位号
+	required int32 State = 2; // 与CMD_ReportState的State一致
+}
+
+// 命令ID: 111
+message NTF_RETURN_KICKED_TIMEOUT
+{
+	required uint32 Time = 1; // 还剩多少秒开始踢人
+}
+
+// 命令ID: 112，房间奖励信息
+message NTF_RoomAwardMessage
+{
+	required uint64 UserID = 1; // 获得奖励的玩家的ID
+	required string Message = 2; // 奖励信息（由运营系统和客户端协商格式）
+}
+
+//命令ID：113，房间立即开始回应状态
+message NTF_StartNow
+{
+	repeated int32 Action = 1;//各个用户的回应。0:未回应 1:申请立即 2:同意开始 3:拒绝开始 4:玩家钻石和体力不足
+	optional uint32 Time = 2;//还剩多少秒自动拒绝
+	optional uint32 ErrCode =3;//拒绝原因 0：没有错误 1：玩家拒绝 2：玩家退出 3：有新玩家计入 4：有玩家钻石和体力不足
+}
+
+message UserTempInfo
+{
+	repeated TempInfoData Data = 1;	//内容
+}
+
+//命令ID：114，更新信息
+message NTF_UpdateTempInfo
+{
+	repeated UserTempInfo TempData = 1;	//对应玩家的临时数据
+}
